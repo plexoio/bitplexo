@@ -1,0 +1,48 @@
+/* Font families*/
+
+
+/*General Styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+#logo{
+    float: left;
+    padding-left: 15px;
+}
+
+#logo img,h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+#logo > img {
+    height: 45px;
+}
+#menu-bar {
+    list-style: none;
+    padding-right: 35px;
+}
+
+#menu-bar li {
+    float: right;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+#logo , #menu-bar {
+    line-height: 30px;
+}
