@@ -53,12 +53,59 @@ A bank or financial platform has discovered the potential of decentralized techn
 
 Following the philosophy of making technology invisible to users, the project was designed to satisfy a financial platform's desires.
 
-Currently, users are able to swap between fiat and crypto currencies through the platform. The bank can also sell crypto, which will then appear in the crypto section for swapping to other coins, or vice versa for fiat currencies.
+Currently, users are able to swap between fiat and crypto currencies through the platform. The bank can also allow buy & sell functionality, which will then appear in the crypto section for swapping to other coins, or vice versa for fiat currencies (not limited to just swapping coins).
 
-Although this iteration is only meant to showcase the financial capabilities of the project, it remains useful and interactive through Javascript, CSS, and HTML.
+Although this iteration is only meant to showcase the future financial capabilities of the project, it remains useful and interactive through Javascript, CSS, and HTML.
 
 Investors, stakeholders, and clients are fully satisfied with the Bitplexo project since they are interested in forex and defi. The project's ability to seamlessly integrate traditional and decentralized financial systems appeals to a diverse range of users and offers a more comprehensive and holistic financial experience.
 
 These insights stem from comprehensive research, as evidenced by the accompanying table and graphic.
 
 ### Research
+
+| Goals                  | Relevancy (0-5) | Viability (0-5) | N. Items (0-~) |
+| ---------------------- | --------------- | --------------- | ------------- |
+| Welcome Alert          | 3               | 5               |               |
+| Fiat Swap <br>- Secure Login <br>- FAQ button | 5           | 2               |               |
+| Crypto Swap <br>- Metamask Login <br>- FAQ button | 5         | 2               |               |
+| Contact page           | 5               | 5               |               |
+| Buy/sell option <br>- Fiat Page <br>- Crypto Page | 3         | 2               |               |
+| SSL Badge              | 5               | 5               |               |
+| CAPTCHA Verification   | 3               | 2               |               |
+| N. Items               |                 |                 | 7             |
+| Max. Points            |                 |                 | 35            |
+| Results                | 29              | 24              |               |
+| Percentage             | 82.85% (Strategy)| 65.71%(Scope)   |               |
+
+We created a list of items, elements, or features that should be included in this iteration. After conducting research, we have compiled the following results, which will assist us in developing the next point for further understading and development:
+
+### Research Graphic
+
+![Table Graphic](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/strategy.png)
+
+We understand that a hard work on this plane will contribute to the success of the next one, as all planes are interconnected.
+
+Analyzing these results, only two points (features) scored 5 out of 5 in both `importance and viability`. This is expected due to the simplicity of the features and their significance in security, as in the case of the `SSL badge`.
+
+Another point that `scored 5` is the one in `blue color`, which has a viability of 5 because it can be achieved using CSS and JavaScript. Although its importance could be considered optional, I recommend using it to inform users of their location and the content they are about to view.
+
+Examining the other elements at the bottom of the graphic, we see two elements that scored `5 and 2`, respectively. These scores are for the most critical parts of our project: the `crypto and fiat swapping` features. Although they are highly important, we cannot create a fully functional swapping environment for the public yet, as it is only meant to showcase our future financial application.
+
+On the other hand, two points scored `3 and 2`, respectively: the `Buy & Sell button` and `CAPTCHA verification`. At this stage, we believe that we can include `only one` of these features in this iteration, depending on our resources and time.
+
+Regarding the percentages in the table, we have an idea of the overall importance of the general features for this iteration. A score of `82.85% is good`, even if some features are `quite simple`.
+
+As for viability, achieving a `65.71%` score is `reasonable`, given that the first iteration is not yet open to the public, and various factors need to be considered before that happens. Therefore, it is still a satisfactory score.
+
+With this information, we can now move on to the next stage, which is Scope.
+
+## Scope Plane <a name="scope-plane"></a> | [#](#index)
+
+For this iteration, we decided to include features and functionalities under the following conditions and goals:
+
+
+|               Condition               |                             Iteration                              |                      Goals                      |
+| :-----------------------------------: | :----------------------------------------------------------------: | :---------------------------------------------: |
+|              Limited use              |           - Fiat Swap<br>- Crypto Swap<br>- contact.html            |               Culture acquisition               |
+|             Simple design             |                 - Buy & Sell buttons<br>- CAPTCHA or SSL Badge <br> - Login methods                |                  Tech Showcase                  |
+| Low leading rates<br>& Non-functional | - Buy & Sell buttons<br>- Fiat & Crypto Swap<br>| Long-term Investment<br>& Future Implementation |
