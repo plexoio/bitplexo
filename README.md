@@ -101,7 +101,12 @@ With this information, we can now move on to the next stage, which is Scope.
 
 ## Scope Plane <a name="scope-plane"></a> | [#](#index)
 
-For this iteration, we decided to include features and functionalities under the following conditions and goals:
+As the strategy plane has introduced, our iteration is designed to meet the future development needs of a `financial platform or bank`. We are focused on ensuring a positive `user experience` and `user interface` for this project. This will showcase how users perceive the web3 application and how it can benefit both stakeholders and the company.
+
+Our purpose is to use the data obtained from our research on the `strategy plane` to build the foundation for a successful `web3 financial application`.
+
+For this MVP iteration, we have decided to include features and functionalities based on the following conditions and goals:
+
 
 
 |               Condition               |                             Iteration                              |                      Goals                      |
@@ -109,3 +114,27 @@ For this iteration, we decided to include features and functionalities under the
 |              Limited use              |           - Fiat Swap<br>- Crypto Swap<br>- contact.html            |               Culture acquisition               |
 |             Simple design             |                 - Buy & Sell buttons<br>- CAPTCHA or SSL Badge <br> - Login methods                |                  Tech Showcase                  |
 | Low leading rates<br>& Non-functional | - Buy & Sell buttons<br>- Fiat & Crypto Swap<br>| Long-term Investment<br>& Future Implementation |
+
+The table displays what we can achieve in this iteration, with our main goal being to showcase the most important features and technologies, such as `Fiat Swap and Crypto Swap` (with limited use) in a safe environment before the actual site is launched. This is why it has been tagged as `Culture Acquisition`.
+
+There are other features and functionalities to be included, such as the `Buy & Sell button`, `CAPTCHA verification`, `SSL Badge notice`, and important `login methods`. They are all part of the great technologies we need to use to achieve our goals, and therefore, they must be simple this time.
+
+Our aim is to benefit all stakeholders, including users, and create a powerful financial platform. In these terms, `Buy & Sell` functionalities and `Fiat & Crypto Swap` can wait for future implementation as part of our long-term investment.
+
+This is our scope for the `MVP` - simple, straightforward, and limited due to `timeframes`, `available technologies`, and other general resources such as `legal conditions` and `human resources`.
+
+After analyzing the important factors at each step of our research to make it useful, sellable, and buildable, taking into consideration the objective, functional, non-functional, and business rule elements, we were able to define the `lifecycle of the application` and how a subject can interact with it from beginning to end. This is evident from our User Story table:
+
+Note: In this context, "subject" refers to a user, prospect, or stakeholder.
+
+### User Story
+
+| Scenario                                                             | Solution                                                                                                                                |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Subject gets interested in the Bitplexo web3 app                      | Subject discovers the Bitplexo `MVP` release                                                                                             |
+| Subject wants to learn `how and where` to swap `Fiat & Crypto`           | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site          |
+| Subject wants to know how to `identify` themselves on the site         | Subject learns that there are two ways to log in, one for Fiat `(traditional)` and another for Crypto `(decentralized)`            |
+| Subject wants to interact more with the app                          | Subject discovers the various `types of data` available once logged in, as well as the `Buy & Sell` capabilities                            |
+| Subject has `questions` and wants to speak directly with an agent      | Subject finds a `question mark button` on the Fiat and Crypto swapping page, as well as a `contact page` for support and assistance        |
+
+By aligning our `scope` with the results of our research on the Strategy plane, we have established a clear intention for our MVP iteration. This will enable us to build a solid foundation for our next phase, `Structure`.
