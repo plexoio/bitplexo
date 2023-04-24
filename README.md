@@ -75,7 +75,7 @@ These insights stem from comprehensive research, as evidenced by the accompanyin
 | N. Items               |                 |                 | 7             |
 | Max. Points            |                 |                 | 35            |
 | Results                | 29              | 24              |               |
-| Percentage             | 82.85% (Strategy)| 65.71%(Scope)   |               |
+| Percentage             | 82.85%<br>(Strategy)| 65.71%<br>(Scope)   |               |
 
 We created a list of items, elements, or features that should be included in this iteration. After conducting research, we have compiled the following results, which will assist us in developing the next point for further understading and development:
 
@@ -132,9 +132,15 @@ Note: In this context, "subject" refers to a user, prospect, or stakeholder.
 | Scenario                                                             | Solution                                                                                                                                |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | Subject gets interested in the Bitplexo web3 app                      | Subject discovers the Bitplexo `MVP` release                                                                                             |
-| Subject wants to learn `how and where` to swap `Fiat & Crypto`           | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site          |
-| Subject wants to know how to `identify` themselves on the site         | Subject learns that there are two ways to log in, one for Fiat `(traditional)` and another for Crypto `(decentralized)`            |
-| Subject wants to interact more with the app                          | Subject discovers the various `types of data` available once logged in, as well as the `Buy & Sell` capabilities                            |
-| Subject has `questions` and wants to speak directly with an agent      | Subject finds a `question mark button` on the Fiat and Crypto swapping page, as well as a `contact page` for support and assistance        |
+| Subject wants to learn `how` and `where` to swap `Fiat & Crypto`           | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site          |
+| Subject wants to know how to `identify` themselves on the site         | Subject learns that there are two ways to log in, one for `Fiat` (traditional) and another for `Crypto` (decentralized)            |
+| Subject wants to interact more with the app                          | Subject discovers the various types of `data` available once logged in, as well as the `Buy & Sell` capabilities                            |
+| Subject has `questions` and wants to speak directly with an agent      | Subject finds a question mark `button` on the Fiat and Crypto swapping page, as well as a `contact` page for support and assistance        |
 
 By aligning our `scope` with the results of our research on the Strategy plane, we have established a clear intention for our MVP iteration. This will enable us to build a solid foundation for our next phase, `Structure`.
+
+## Structure Plane <a name="structure-plane"></a> | [#](#index)
+
+![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
+
+![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXD.png)
