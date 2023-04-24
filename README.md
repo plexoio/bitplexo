@@ -143,4 +143,4 @@ By aligning our `scope` with the results of our research on the Strategy plane, 
 
 ![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
 
-![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXD.png)
+![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDLong.png)
