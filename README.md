@@ -143,8 +143,8 @@ By aligning our `scope` with the results of our research on the Strategy plane, 
 
 ![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
 
-![Live Mindmap](https://gitmind.com/app/docs/mxw5lnlr)
+- [Live Mindmap](https://gitmind.com/app/docs/mxw5lnlr)
 
-![Live Outline](https://gitmind.com/app/docs/mxw5lnlr?view=outline)
+- [Live Outline](https://gitmind.com/app/docs/mxw5lnlr?view=outline)
 
 ![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDLong.png)
