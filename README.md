@@ -69,7 +69,7 @@ These insights stem from comprehensive research, as evidenced by the accompanyin
 | Fiat Swap <br>- Secure Login <br>- FAQ button | 5           | 2               |               |
 | Crypto Swap <br>- Metamask Login <br>- FAQ button | 5         | 2               |               |
 | Contact page           | 5               | 5               |               |
-| Buy/sell option <br>- Fiat Page <br>- Crypto Page | 3         | 2               |               |
+| Buy/sell option <br>- Fiat & Crypto section | 3         | 2               |               |
 | SSL Badge              | 5               | 5               |               |
 | CAPTCHA Verification   | 3               | 2               |               |
 | N. Items               |                 |                 | 7             |
@@ -103,6 +103,8 @@ With this information, we can now move on to the next stage, which is Scope.
 
 As the strategy plane has introduced, our iteration is designed to meet the future development needs of a `financial platform or bank`. We are focused on ensuring a positive `user experience` and `user interface` for this project. This will showcase how users perceive the web3 application and how it can benefit both stakeholders and the company.
 
+`Imporant:` All of the functionalities are located on a `single page`, so we have two pages in total, with the index.html containing the majority of the features and functionalities.
+
 Our purpose is to use the data obtained from our research on the `strategy plane` to build the foundation for a successful `web3 financial application`.
 
 For this MVP iteration, we have decided to include features and functionalities based on the following conditions and goals:
@@ -135,16 +137,23 @@ Note: In this context, "subject" refers to a user, prospect, or stakeholder.
 | Subject wants to learn `how` and `where` to swap `Fiat & Crypto`           | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site          |
 | Subject wants to know how to `identify` themselves on the site         | Subject learns that there are two ways to log in, one for `Fiat` (traditional) and another for `Crypto` (decentralized)            |
 | Subject wants to interact more with the app                          | Subject discovers the various types of `data` available once logged in, as well as the `Buy & Sell` capabilities                            |
-| Subject has `questions` and wants to speak directly with an agent      | Subject finds a question mark `button` on the Fiat and Crypto swapping page, as well as a `contact` page for support and assistance        |
+| Subject has `questions` and wants to speak directly with an agent      | Subject finds a question mark `button` on the Fiat and Crypto swapping section, as well as a `contact` page for support and assistance        |
 
 By aligning our `scope` with the results of our research on the Strategy plane, we have established a clear intention for our MVP iteration. This will enable us to build a solid foundation for our next phase, `Structure`.
 
 ## Structure Plane <a name="structure-plane"></a> | [#](#index)
 
-![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
+![IXD Mindmap Initial](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
 
-- [Live Mindmap](https://gitmind.com/app/docs/mxw5lnlr)
+- [IXD Live Mindmap](https://gitmind.com/app/docs/mxw5lnlr)
 
-- [Live Outline](https://gitmind.com/app/docs/mxw5lnlr?view=outline)
+- [IXD Live Outline](https://gitmind.com/app/docs/mxw5lnlr?view=outline)
 
-![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDLong.png)
+![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXD.png)
+
+![IAD Mindmap Initial](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IADInitial.png)
+
+- [IAD Live Mindmap](https://gitmind.com/app/docs/m52e8l4u)
+
+- [IAD Live Outline](https://gitmind.com/app/docs/m52e8l4u?view=outline)
+![IAD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IAD.png)
