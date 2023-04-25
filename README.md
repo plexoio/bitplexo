@@ -93,6 +93,8 @@ Examining the other elements at the bottom of the graphic, we see two elements t
 
 On the other hand, two points scored `3 and 2`, respectively: the `Buy & Sell button` and `CAPTCHA verification`. At this stage, we believe that we can include `only one` of these features in this iteration, depending on our resources and time.
 
+- Timeframe: 3 weeks.
+
 Regarding the percentages in the table, we have an idea of the overall importance of the general features for this iteration. A score of `82.85% is good`, even if some features are `quite simple`.
 
 As for viability, achieving a `65.71%` score is `reasonable`, given that the first iteration is not yet open to the public, and various factors need to be considered before that happens. Therefore, it is still a satisfactory score.
@@ -143,7 +145,17 @@ By aligning our `scope` with the results of our research on the Strategy plane, 
 
 ## Structure Plane <a name="structure-plane"></a> | [#](#index)
 
-![IXD Mindmap Initial](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDInitial.png)
+Regarding user difficulty, we believe that our project will be of `medium difficulty` in general. We have a firm mindset of keeping things simple and user-friendly for all users, regardless of their age.
+
+To make navigation easier for users, we have integrated all essential features and functionalities into a `single page`. This means that users can easily navigate and identify where they are, what they can do, and where they can go.
+
+Our `Gitmind` mind maps clearly show the different state changes, from the welcome page to switching from fiat to crypto swap.
+
+As always, we have prioritized consistency, predictability, learnability, visibility, and feedback to ensure a positive user experience.
+
+For more details on our `Interactive Experience Design IXD` for the Bitplexo Prototype/Demo Project, please refer to the attached mind map.
+
+![IXD Mindmap Initial](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXDini.png)
 
 - [IXD Live Mindmap](https://gitmind.com/app/docs/mxw5lnlr)
 
@@ -151,9 +163,20 @@ By aligning our `scope` with the results of our research on the Strategy plane, 
 
 ![IXD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IXD.png)
 
+We made sure to use the right `keywords` when navigating the site promoting assertiveness in users' decisions. We guarantee that users will get the best out of our site.
+
+We understand that sites like ours can often have an overload of information. However, in our case, everything is `easy` to understand and `straightforward`.
+
+It's important to consider both `IXD` (Interaction Experience Design) and `IAD` (Information Architecture Design) to have a clear mental view of the product.
+
+For more details on our `Information Architecture Design IAD` for the Bitplexo Prototype/Demo Project, please refer to the attached mind map.
+
 ![IAD Mindmap Initial](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IADInitial.png)
 
 - [IAD Live Mindmap](https://gitmind.com/app/docs/m52e8l4u)
 
 - [IAD Live Outline](https://gitmind.com/app/docs/m52e8l4u?view=outline)
+  
 ![IAD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IAD.png)
+
+In this first iteration, we know exactly what we want, what we need, and what's good for us: The `IXD` and `IAD` provided us with the necessary pieces to work with, enabling us to achieve our goals with this incredible project. Now we can move forward to the `Skeleton plane`.
