@@ -8,30 +8,33 @@
     padding: 0;
     border: none;
     text-decoration: none;
+    color: #3a3a3a;
 }
 
-body{
+body {
     background-color: whitesmoke;
 }
 
-a{ 
+a {
     text-decoration: none;
 }
 
-#logo{
+#logo {
     float: left;
     padding-left: 15px;
 }
 
-#logo img,h1 {
+#logo img, h1 {
     display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 22px;
 }
-#logo > img {
+
+#logo>img {
     height: 45px;
 }
+
 #menu-bar {
     list-style: none;
     padding-right: 35px;
@@ -43,6 +46,54 @@ a{
     font-size: 18px;
 }
 
-#logo , #menu-bar {
+#logo, #menu-bar {
     line-height: 30px;
+}
+
+.bitlogo {
+    background: url(../img/192x192.png) no-repeat center center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.welcome {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+}
+
+.center-title {
+    padding: 10vh 0px;
+}
+
+.blue-text {
+    color: #3498db;
+}
+
+.cta-submit {
+    background-color: #ffffff;
+    font-size: 30px;
+    padding: 15px 60px;
+    border-radius: 15px;
+    color: #3498db;
+    transition: 0.3s;
+    border:2px solid #3498db;
+    cursor: pointer;
+}
+
+.cta-submit:hover {
+    background-color: #3498db;
+    color: white;
+    transition: 0.3s;
 }

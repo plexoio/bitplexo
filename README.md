@@ -180,3 +180,6 @@ For more details on our `Information Architecture Design IAD` for the Bitplexo P
 ![IAD Mindmap](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/IAD.png)
 
 In this first iteration, we know exactly what we want, what we need, and what's good for us: The `IXD` and `IAD` provided us with the necessary pieces to work with, enabling us to achieve our goals with this incredible project. Now we can move forward to the `Skeleton plane`.
+
+## Skeleton Plane <a name="skeleton-plane"></a> | [#](#index)
+
