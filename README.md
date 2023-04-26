@@ -183,3 +183,30 @@ In this first iteration, we know exactly what we want, what we need, and what's 
 
 ## Skeleton Plane <a name="skeleton-plane"></a> | [#](#index)
 
+We have come a long way to reach this plane. Throughout our journey, we have collected fragments from various sources, much like ascending a mountain. We have carefully selected and refined these pieces, analyzing and `extrapolating` essential data, steps, features, and functionalities.
+
+Our progression has followed a logical sequence: Strategy, Scope, Structure, and now we find ourselves at the `Skeleton plane`.
+
+Until now, our ideas may have existed in abstract forms, perhaps as scattered drawings on paper without clear cohesion. However, in the Skeleton plane, we can finally grasp the `essence` of our projects. We can visualize the `instances` and achieve a higher level of abstraction that allows us to perceive the project as a cohesive whole, super useful for the `programming part` as well.
+
+At this plane, all the features, functionalities, elements' interactions, and content layouts are `visible` and `comprehensible`. We can understand the `interconnectedness` of each component we have been diligently working on.
+
+For this phase, we have opted to utilize `Adobe XD`, a software the author is experienced with. This tool provides a comprehensive `wireframe` that enhances our workflow and enables us to collaborate effectively.
+
+![Skeleton Gif image](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/skeleton.gif)
+
+The simple and straightforward navigation is visible, and everything is just a few clicks away from the user's goal. The priorities are also clear: first, the `welcome page`; second, the `login page`; and after that, users are free to `swap` immediately, or go to the `contact` page.
+
+Notice the progression from simple to more complex functionalities and layouts. Users are able to learn as they walk through the website. We don't want to overwhelm them, so we take the `progressive disclosure` part seriously.
+
+We invested time and resources into this process before `coding` the actual product to bring it to life.
+
+Nothing is new or surprising; everything is done intuitively by the users following their own habits, standards, and conventions.
+
+We paid attention to keywords, invisible information, hierarchies, and content in lists and forms. All can be seen in our desktop-based `prototype/demo`.
+
+We strived to keep everything simple, intuitive, and repetitive. At the same time, we set the foundation for our last plane by defining `colors`, `shapes`, and certain special final data.
+
+Our next stop is the `Surface plane`.
+
+## Surface Plane <a name="surface-plane"></a> | [#](#index)
