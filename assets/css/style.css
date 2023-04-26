@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+nav {
+    margin:15px;
+}
+
 #logo {
     float: left;
     padding-left: 15px;
