@@ -9,14 +9,13 @@
     <meta name="keywords" content="">
     <meta name="author" content="Frank Arellano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Navbar section-->
     <header>
-        <nav id="nav-wakeup">
+        <nav class="off-item">
             <a id="logo" href="#">
                 <img src="assets/img/192x192.png" alt="Logo of Bitplexo">
             </a>
@@ -29,7 +28,7 @@
     </header>
 
     <!-- First Page / WELCOME -->
-    <div id="enter-system" class="welcome">
+    <div class="welcome on-item">
         <!-- Logo -->
         <section>
             <div class="bitlogo">
@@ -62,48 +61,51 @@
 
     <div>
         <!-- Description and Login options-->
-        <section id="h2-login">
-            <h2>Start trading easily by logging in either for <span>Fiat</span> or <span>Crypto</span>.</h2>
+        <section id="h2-login" class="off-item">
+            <h2>Start trading easily by logging in either for <a href="index.html" target="_self"><span>Fiat</span></a> or <span>Crypto</span>.</h2>
         </section>
 
         <!-- Login section-->
 
         <!--Traditional secure Login-->
-        <section id="login-form">
-
-            <h2>Fiat</h2>
-            <div id="faq">
-                <i>?</i>
-            </div>
-
-            <form id="my-login" method="" action="">
-                <!-- Certificate Upload-->
-                <div id="to-left">
-                    <label for="certificate">Upload Certificate</label>
-                    <input id="certificate" type="file" name="certificate">
+        <div class='inline-block'>
+            <section id="login-form" class="off-item">
+            
+                <h2><span>Fiat</span></h2>
+                <div id="faq">
+                    <i>?</i>
                 </div>
+                <form id="my-login" action="https://formdump.codeinstitute.net/" method="POST">
+                    <!-- Certificate Upload-->
+                    <div id="to-left">
+                        <label for="certificate">Upload Certificate</label>
+                        <input id="certificate" type="file" name="certificate">
+                    </div>
 
-                <div id="username">
-                    <label for="username-input">Username</label>
-                    <input id="username-input" type="text" name="username">
-                </div>
+                    <div id="username">
+                        <label for="username-input">Username</label>
+                        <input id="username-input" type="text" name="username" required>
 
-                <div id="password">
-                    <label for="password-input"> Password</label>
-                    <input id="password-input" type="password" name="password">
-                </div>
+                    </div>
 
-                <div id="text-center">
-                    <label for="submit-login"></label>
-                    <input type="submit" class="cta-login" value="Login">
-                </div>
-            </form>
-        </section>
+                    <div id="password">
+                        <label for="password-input"> Password</label>
+                        <input id="password-input" type="password" name="password" required>
+                    </div>
+
+                    <div id="text-center">
+                        <div id="confirm-input"></div>
+                        <label for="submit-login"></label>
+                        <input type="submit" class="cta-login" value="Login">
+                    </div>
+                </form>
+            </section>
+        </div>
 
         <p></p>
 
         <!-- OR other Login Option-->
-        <p></p>
+        <p> OR</p>
 
         <!-- Metamask Login-->
         <section>
@@ -128,6 +130,7 @@
     <script src=" " async defer></script>
     <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/welcome.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>

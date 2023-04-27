@@ -1,17 +1,21 @@
 // Main Variables
 
-let welcomePage = document.getElementById('enter-system');
-let navWakeUp = document.getElementById('nav-wakeup');
-let titleLogin = document.getElementById('h2-login');
-let loginForm = document.getElementById('login-form');
+let onItem = document.getElementsByClassName('on-item');
+let offItem = document.getElementsByClassName('off-item');
 
 // Captured Event for actions
 
 function getMeIn(event) {
-    welcomePage.style.display = 'none';
-    navWakeUp.style.display = 'inherit';
-    titleLogin.style.display = 'inherit';
-    loginForm.style.display = 'inline-block';
+    
+    let onItems;
+    for (onItems of onItem ) {
+        onItems.style.display = 'none';
+    }
+
+    let offItems;
+    for (offItems of offItem) {
+        offItems.style.display = 'inherit';
+    }
 }
 
 // Add listener to titles and button to enter system

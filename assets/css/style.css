@@ -30,6 +30,7 @@ input {
     border: 1px solid #808080;
     margin-left: 10px;
     margin-top: 20px;
+    font-size: 18px;
 }
 
 label {
@@ -40,6 +41,19 @@ label {
 #text-center {
     text-align: center;
 }
+
+.on-item {
+    display: inherit;
+}
+
+.off-item {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
 
 /* Nav section*/
 
@@ -149,7 +163,7 @@ nav {
     left: -30px;
 }
 
-#h2-login > h2 {
+#h2-login>h2 {
     font-size: 22px;
     display: inline-block;
 }
@@ -159,10 +173,8 @@ nav {
     padding: 30px;
     border: 1px solid #3498db;
     background-color: white;
-    display: inline-block;
-    position: relative;
     border-radius: 15px;
-    display: none;
+    display:none;
 }
 
 #login-form>h2 {
@@ -190,6 +202,7 @@ nav {
 
 #username>input {
     padding: 8px 15px;
+    width:70%;
 }
 
 #password {
@@ -200,6 +213,7 @@ nav {
 #password>input {
     padding: 8px 15px;
     margin-left: 14px;
+    width:70%;
 }
 
 #faq {
@@ -223,4 +237,20 @@ nav {
     background-color: #3498db;
     color: white;
     transition: 0.3s;
+}
+
+#confirm-input {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    display: none;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#confirm-input > p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
