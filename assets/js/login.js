@@ -1,8 +1,8 @@
 //let usernames = ['Jhon', 'Maria', 'Pan', 'Chris'];
-const loginHide = document.getElementsByClassName('inline-block');
-const loginItem = loginHide[0];
-let username = 'carol';
-let password = 'admin123.';
+const closeLogin = document.getElementsByClassName('off-item');
+const finalClose = closeLogin[1];
+const username = 'carol';
+const password = 'admin123.';
 
 function submitListener(event) {
     event.preventDefault();
@@ -12,14 +12,14 @@ function submitListener(event) {
 
     if (userInput === username) {
         if (passInput === password) {
-            loginItem.style.display = "none";
+            finalClose.style.display = "none";
         } else {
             confirm.style.display = "inherit"
-            confirm.innerHTML = `<p>Wrong password!</p>`
+            confirm.innerHTML = `<p>Wrong <b><i>password</i></b>!</p>`
         }
     } else {
         confirm.style.display = "inherit"
-        confirm.innerHTML = `<p>Wrong username!</p>`
+        confirm.innerHTML = `<p>Wrong <b><i>username</i></b>!</p>`
     }
 }
 let loginForm = document.getElementById('my-login');

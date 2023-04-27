@@ -54,6 +54,13 @@ label {
     display: inline-block;
 }
 
+b{
+    color:inherit;
+}
+
+i {
+    color:inherit;
+}
 
 /* Nav section*/
 
@@ -157,7 +164,6 @@ nav {
 /* Login Section*/
 #h2-login {
     margin-top: 2%;
-    display: none;
     position: relative;
     font-size: 16px;
     left: -30px;
@@ -174,7 +180,7 @@ nav {
     border: 1px solid #3498db;
     background-color: white;
     border-radius: 15px;
-    display:none;
+    
 }
 
 #login-form>h2 {

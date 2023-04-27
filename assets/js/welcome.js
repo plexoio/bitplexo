@@ -7,6 +7,7 @@ let offItem = document.getElementsByClassName('off-item');
 
 function getMeIn(event) {
     
+    
     let onItems;
     for (onItems of onItem ) {
         onItems.style.display = 'none';
