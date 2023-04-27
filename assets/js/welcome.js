@@ -1,12 +1,12 @@
 // Main Variables
 
 let onItem = document.getElementsByClassName('on-item');
+let onMeta = onItem[1];
 let offItem = document.getElementsByClassName('off-item');
 
 // Captured Event for actions
 
 function getMeIn(event) {
-    
     
     let onItems;
     for (onItems of onItem ) {
@@ -16,6 +16,7 @@ function getMeIn(event) {
     let offItems;
     for (offItems of offItem) {
         offItems.style.display = 'inherit';
+        onMeta.style.display = 'inline-block';
     }
 }
 

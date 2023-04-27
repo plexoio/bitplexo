@@ -10,6 +10,8 @@
     <meta name="author" content="Frank Arellano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://kit.fontawesome.com/b0f4c7b367.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -74,7 +76,7 @@
 
                 <h2><a href="index.html"><span>Fiat</span></a></h2>
                 <div id="faq">
-                    <i>?</i>
+                    <i class="fa-regular fa-circle-question"></i>
                 </div>
                 <form id="my-login" action="https://formdump.codeinstitute.net/" method="POST">
                     <!-- Certificate Upload-->
@@ -102,19 +104,24 @@
                 </form>
             </section>
         </div>
+        <div>
+            <!-- CTA Create account-->
+            <a href="#" class="login-text">Don't you have an account yet?</a>
 
-        <p></p>
+            <!-- OR other Login Option-->
 
-        <!-- OR other Login Option-->
-        <p> OR</p>
-
-        <!-- Metamask Login-->
-        <section>
-            <div></div>
-        </section>
-        <p></p>
-        </section>
+            <p class="login-text"><b>OR</b></p>
+        </div>
     </div>
+    <!-- Metamask Login-->
+    <a id="metamask-login" href="#" class="on-item">
+        <div>
+            <h4>Metamask</h4>
+            <!-- Vendor logo from https://codepen.io/shivammathur/pen/ZVJaEy -->
+        <div id="logo-container"></div>
+        </div>
+    </a>
+    <div> <a href="#" class="login-text">Don't you know how to use Metamask?</a></div>
     <!-- End of Second Page / LOGIN-->
 
     <!-- Footer section-->
@@ -128,10 +135,10 @@
         <!-- Copyright section-->
         <div></div>
     </footer>
-    <script src=" " async defer></script>
-    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/welcome.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="vendor/js/minimetamask.js" async defer></script>
+    <script src="/vendor/js/metamask-login.js"></script>
 </body>
 
 </html>

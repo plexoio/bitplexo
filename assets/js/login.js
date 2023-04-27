@@ -1,7 +1,9 @@
 // General Variables
 
 const closeLogin = document.getElementsByClassName('off-item');
-const finalClose = closeLogin[1];
+const finalLogin = closeLogin[1];
+const closeMeta = document.getElementsByClassName('on-item')
+const finalMeta = closeMeta[1];
 const confirm = document.getElementById('confirm-input');
 
 // User data
@@ -18,7 +20,8 @@ function submitListener(event) { // function
 
     if (userInput === username) { // validation
         if (passInput === password) { // validation
-            finalClose.style.display = "none";
+            finalLogin.style.display = "none";
+            finalMeta.style.display = "none";
         } else {
             confirm.style.display = "inherit"
             confirm.innerHTML = `<p>Wrong <b><i>password</i></b>!</p>` // if wrong password
@@ -30,3 +33,18 @@ function submitListener(event) { // function
 }
 let loginForm = document.getElementById('my-login'); // call element properties
 loginForm.addEventListener('submit', submitListener); // add listener 'submit' and add function
+
+// Metamask Prelog
+
+let openCrypto = document.getElementsByClassName('off-item'); // Fetch Crypto swap
+let clickCount = 0;
+
+function preLog(event){
+    clickCount++;
+    if (clickCount === 2) {
+        finalLogin.style.display = "none";
+        finalMeta.style.display = "none";
+    }
+}
+
+finalMeta.addEventListener('click', preLog);

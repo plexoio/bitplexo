@@ -1,5 +1,15 @@
-/* Font families*/
+/* Start of local Google Fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Regular.ttf");
+    font-display: swap;
+}
 
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Regular.ttf");
+    font-display: swap;
+}
 
 /*General Styling*/
 
@@ -9,11 +19,16 @@
     border: none;
     text-decoration: none;
     color: #3a3a3a;
+    font-family: 'Roboto', Poppins, sans-serif;
 }
 
 body {
     background-color: whitesmoke;
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Roboto, serif;
 }
 
 a {
@@ -54,12 +69,12 @@ label {
     display: inline-block;
 }
 
-b{
-    color:inherit;
+b {
+    color: inherit;
 }
 
 i {
-    color:inherit;
+    color: inherit;
 }
 
 /* Nav section*/
@@ -119,13 +134,13 @@ nav {
 }
 
 .welcome h2 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     display: inline-block;
 }
 
 .center-title {
-    padding: 10vh 0px;
+    padding: 2vh 0px;
 }
 
 .blue-text {
@@ -175,11 +190,12 @@ nav {
 
 #login-form {
     margin-top: 2%;
+    margin-bottom: 10px;
     padding: 30px;
     border: 1px solid #3498db;
     background-color: white;
     border-radius: 15px;
-    
+
 }
 
 #login-form>h2 {
@@ -207,7 +223,7 @@ nav {
 
 #username>input {
     padding: 8px 15px;
-    width:70%;
+    width: 70%;
 }
 
 #password {
@@ -218,12 +234,15 @@ nav {
 #password>input {
     padding: 8px 15px;
     margin-left: 14px;
-    width:70%;
+    width: 70%;
 }
 
 #faq {
     display: inline;
     float: right;
+    font-size: 18px;
+    color: #3498db;
+    cursor: pointer;
 }
 
 .cta-login {
@@ -254,8 +273,41 @@ nav {
     margin-right: 20%;
 }
 
-#confirm-input > p {
+#confirm-input>p {
     color: white;
     font-size: 18px;
     font-weight: 400;
+}
+
+/* CTA create account and OR*/
+
+.login-text {
+    margin-top: 10px;
+    color: #3498db;
+    font-size: 18px;
+}
+
+/* Metamask Login*/
+
+#metamask-login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border: 1px solid #3498db;
+    border-radius: 15px;
+    color: #f66f00;
+    cursor: pointer;
+}
+
+#metamask-login>div>h4 {
+    color: #f66f00;
+    margin-top: 5px;
+}
+
+#logo-container svg {
+    width: 80px;
+    height: 80px;
 }
