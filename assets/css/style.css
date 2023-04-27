@@ -13,14 +13,38 @@
 
 body {
     background-color: whitesmoke;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
 
+span {
+    color: #3498db;
+}
+
+input {
+    display: inline;
+    color: #3498db;
+    border: 1px solid #808080;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+label {
+    color: #3498db;
+    font-size: 18px;
+}
+
+#text-center {
+    text-align: center;
+}
+
+/* Nav section*/
+
 nav {
-    padding:15px;
+    padding: 15px;
     display: none;
 }
 
@@ -54,6 +78,8 @@ nav {
 #logo, #menu-bar {
     line-height: 30px;
 }
+
+/* Welcome Section*/
 
 .bitlogo {
     background: url(../img/192x192.png) no-repeat center center;
@@ -104,11 +130,96 @@ nav {
     border-radius: 15px;
     color: #3498db;
     transition: 0.3s;
-    border:2px solid #3498db;
+    border: 2px solid #3498db;
     cursor: pointer;
 }
 
 .cta-submit:hover {
+    background-color: #3498db;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Login Section*/
+#h2-login {
+    margin-top: 2%;
+    display: none;
+    position: relative;
+    font-size: 16px;
+    left: -30px;
+}
+
+#h2-login > h2 {
+    font-size: 22px;
+    display: inline-block;
+}
+
+#login-form {
+    margin-top: 2%;
+    padding: 30px;
+    border: 1px solid #3498db;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    display: none;
+}
+
+#login-form>h2 {
+    display: inline;
+}
+
+
+#to-left {
+    text-align: initial;
+}
+
+#to-left>input {
+    border: none;
+}
+
+#to-left>label {
+    color: #3a3a3a;
+}
+
+
+#username {
+    width: auto;
+    text-align: left;
+}
+
+#username>input {
+    padding: 8px 15px;
+}
+
+#password {
+    width: auto;
+    text-align: left;
+}
+
+#password>input {
+    padding: 8px 15px;
+    margin-left: 14px;
+}
+
+#faq {
+    display: inline;
+    float: right;
+}
+
+.cta-login {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 7px 30px;
+    border-radius: 15px;
+    color: #3498db;
+    transition: 0.3s;
+    border: 2px solid #3498db;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cta-login:hover {
     background-color: #3498db;
     color: white;
     transition: 0.3s;

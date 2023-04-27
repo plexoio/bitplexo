@@ -2,12 +2,16 @@
 
 let welcomePage = document.getElementById('enter-system');
 let navWakeUp = document.getElementById('nav-wakeup');
+let titleLogin = document.getElementById('h2-login');
+let loginForm = document.getElementById('login-form');
 
 // Captured Event for actions
 
 function getMeIn(event) {
     welcomePage.style.display = 'none';
     navWakeUp.style.display = 'inherit';
+    titleLogin.style.display = 'inherit';
+    loginForm.style.display = 'inline-block';
 }
 
 // Add listener to titles and button to enter system

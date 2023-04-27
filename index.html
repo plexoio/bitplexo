@@ -42,10 +42,10 @@
             </div>
 
             <div>
-                <h2 class="center-title">Start 
+                <h2 class="center-title">Start
                     <span class="blue-text">Swapping</span>
                     <br>
-                    <span class="blue-text">Fiat</span> & 
+                    <span class="blue-text">Fiat</span> &
                     <span class="blue-text">Crypto</span>
                     <br>Today
                 </h2>
@@ -56,44 +56,60 @@
             </div>
         </section>
     </div>
-    <script src="assets/js/welcome.js"></script>
     <!-- End of First Page / WELCOME -->
 
     <!-- Second Page / LOGIN-->
 
     <div>
         <!-- Description and Login options-->
-        <section>
-            <h2></h2>
-            <p></p>
+        <section id="h2-login">
+            <h2>Start trading easily by logging in either for <span>Fiat</span> or <span>Crypto</span>.</h2>
         </section>
 
         <!-- Login section-->
-        <section>
-            <div>
-                <h2></h2>
-                <i></i>
+
+        <!--Traditional secure Login-->
+        <section id="login-form">
+
+            <h2>Fiat</h2>
+            <div id="faq">
+                <i>?</i>
             </div>
 
-            <!--Traditional secure Login-->
+            <form id="my-login" method="" action="">
+                <!-- Certificate Upload-->
+                <div id="to-left">
+                    <label for="certificate">Upload Certificate</label>
+                    <input id="certificate" type="file" name="certificate">
+                </div>
 
-            <!-- Certificate Upload-->
-            <section></section>
+                <div id="username">
+                    <label for="username-input">Username</label>
+                    <input id="username-input" type="text" name="username">
+                </div>
 
-            <!-- Login form section-->
-            <section>
-                <form id="" method="" action=""></form>
-            </section>
-            <p></p>
+                <div id="password">
+                    <label for="password-input"> Password</label>
+                    <input id="password-input" type="password" name="password">
+                </div>
 
-            <!-- OR other Login Option-->
-            <p></p>
+                <div id="text-center">
+                    <label for="submit-login"></label>
+                    <input type="submit" class="cta-login" value="Login">
+                </div>
+            </form>
+        </section>
 
-            <!-- Metamask Login-->
-            <section>
-                <div></div>
-            </section>
-            <p></p>
+        <p></p>
+
+        <!-- OR other Login Option-->
+        <p></p>
+
+        <!-- Metamask Login-->
+        <section>
+            <div></div>
+        </section>
+        <p></p>
         </section>
     </div>
     <!-- End of Second Page / LOGIN-->
@@ -111,6 +127,7 @@
     </footer>
     <script src=" " async defer></script>
     <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/welcome.js"></script>
 </body>
 
 </html>
