@@ -21,13 +21,13 @@
     <!-- Start of Navbar section-->
     <header>
         <nav class="off-item">
-            <a id="logo" href="#">
+            <a id="logo" href="index.html">
                 <img src="assets/img/192x192.png" alt="Logo of Bitplexo">
             </a>
             <ul id="menu-bar">
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Crypto</a></li>
-                <li><a href="#">Fiat</a></li>
+                <li><a class="to-crypto" href="#">Crypto</a></li>
+                <li><a class="to-fiat" href="#">Fiat</a></li>
             </ul>
         </nav>
     </header>
@@ -66,8 +66,8 @@
 
         <!-- Description and Login options-->
         <section id="h2-login">
-            <h2>Start trading easily by logging in either for <a href="index.html"><span>Fiat</span></a>
-                or <a href="crypto.html"><span>Crypto</span></a>.</h2>
+            <h2>Start trading easily by logging in either for <a class="to-fiat" href="#"><span>Fiat</span></a>
+                or <a class="to-crypto" href="#"><span>Crypto</span></a>.</h2>
         </section>
 
         <!--Traditional secure Login-->
@@ -75,7 +75,7 @@
             <section id="login-form">
                 <h2><a href="index.html"><span>Login</span></a></h2>
                 <div id="faq">
-                    <i class="fa-regular fa-circle-question"></i>
+                    <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
                 </div>
                 <form id="my-login" action="https://formdump.codeinstitute.net/" method="POST">
                     <!-- Certificate Upload-->
@@ -132,7 +132,7 @@
     <footer class="footer">
 
         <!-- Social Media buttons-->
-        <div id="social-media">
+        <div id="social-media" aria-label="Social Media buttons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer nofollow"><i
                     class="fa-brands fa-square-facebook"></i></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer nofollow"><i
@@ -149,8 +149,8 @@
             data-ticker_speed="80"></div>
 
         <!-- Copyright section-->
-        <div id="copyright"><a href="https://github.com/plexoio/bitplexo" target="_blank"
-                rel="noopener noreferrer nofollow"><b>© Bitplexo, Inc. 2023</b></a></div>
+        <div id="copyright"><a href="https://github.com/plexoio/bitplexo" target="_blank" aria-label="link to author"
+                rel="author noopener noreferrer"><b>© Bitplexo, Inc. 2023</b></a></div>
     </footer>
     <!-- End of Footer section-->
 

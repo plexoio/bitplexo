@@ -35,10 +35,23 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    transition: 0.3s;
+    color: #3498db;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: #3a3a3a;
 }
 
 span {
     color: #3498db;
+    transition: 0.3s;
+}
+
+span:hover {
+    color:#3a3a3a;
+    transition: 0.3s;
 }
 
 input {
@@ -199,13 +212,12 @@ nav {
     border: 1px solid #3498db;
     background-color: white;
     border-radius: 15px;
-
 }
 
 #login-form>h2 {
     display: inline;
+    transition: 0.3s;
 }
-
 
 #to-left {
     text-align: initial;
@@ -283,14 +295,22 @@ nav {
     font-weight: 400;
 }
 
-/* CTA create account and OR*/
+/* CTA create account and OR Learn Metamask*/
 
 .login-text {
     margin-top: 5px;
-    color: #3498db;
-    font-size: 14px;
+    color: #3a3a3a;
+    font-size: 16px;
     margin-bottom: -5px;
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+.login-text:hover {
+    color: #3498db;
+    transition: 0.3s;
+}
+
 
 /* Metamask Login*/
 
@@ -365,13 +385,4 @@ nav {
     float: right;
     padding-right: 10%;
     padding-top: 10px;
-}
-
-#copyright>a {
-    transition: 0.3s;
-}
-
-#copyright>a:hover {
-    color: #3498db;
-    transition: 0.3s;
 }

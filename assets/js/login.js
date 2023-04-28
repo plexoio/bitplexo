@@ -40,20 +40,16 @@ function submitListener(event) { // Validation Function
         confirm.innerHTML = `<p>The username <b><i>${userInput}</i></b> is wrong!</p>` // if wrong username
     }
 }
+
+// CTA to login Fiat & Crypto
+
+let toFiat = document.getElementsByClassName('to-fiat'); // for FIAT nav connection
+for (fiat=0; fiat < toFiat.length; fiat++) {
+    toFiat[fiat].addEventListener('click', submitListener);
+}
+
+
 let loginForm = document.getElementById('my-login'); // call element properties
 loginForm.addEventListener('submit', submitListener); // add listener 'submit' and add function
 
-// Metamask Prelog
-
-let openCrypto = document.getElementsByClassName('off-item'); // Fetch Crypto swap
-let clickCount = 0;
-
-function preLog(event) {
-    clickCount++;
-    if (clickCount === 2) {
-        finalLogin.style.display = "none";
-        finalMeta.style.display = "none";
-    }
-}
-
-finalMeta.addEventListener('click', preLog);
+loginForm.addEventListener('touchend', submitListener); // For Devices
