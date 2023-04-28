@@ -20,6 +20,7 @@
     text-decoration: none;
     color: #3a3a3a;
     font-family: 'Roboto', Poppins, sans-serif;
+    user-select: none;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', Roboto, serif;
+    color: #3a3a3a;
 }
 
 a {
@@ -46,6 +48,7 @@ input {
     margin-left: 10px;
     margin-top: 20px;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 label {
@@ -191,7 +194,7 @@ nav {
 #login-form {
     margin-top: 2%;
     margin-bottom: 10px;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid #3498db;
     background-color: white;
     border-radius: 15px;
@@ -282,9 +285,10 @@ nav {
 /* CTA create account and OR*/
 
 .login-text {
-    margin-top: 10px;
+    margin-top: 5px;
     color: #3498db;
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: -5px;
 }
 
 /* Metamask Login*/
@@ -310,4 +314,42 @@ nav {
 #logo-container svg {
     width: 80px;
     height: 80px;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    z-index:999;
+}
+.footer > div {
+display: inline-block;
+}
+
+#social-media {
+    float: left;
+    padding-left: 10%;
+    padding-top: 8px;
+}
+#social-media > a {
+    padding-right: 20px;
+    font-size: 25px;
+    color: #3498db;
+}
+
+#crypto-widget {
+    text-align: center;
+    width: 40%;
+}
+
+#copyright {
+    float: right;
+    padding-right: 10%;
+    padding-top: 8px;
 }

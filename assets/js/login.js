@@ -1,17 +1,18 @@
 // General Variables
-
 const closeLogin = document.getElementsByClassName('off-item');
 const finalLogin = closeLogin[1];
 const closeMeta = document.getElementsByClassName('on-item')
 const finalMeta = closeMeta[1];
 const confirm = document.getElementById('confirm-input');
+const loginText = document.getElementsByClassName('login-text');
+const finalText = loginText[2];
 
 // User data
 
 const username = 'carol';
 const password = 'admin123.';
 
-// Variable and function to capture event and react accordingly
+// Variable and function to capture an event and react accordingly
 
 function submitListener(event) { // function
     event.preventDefault();
@@ -22,6 +23,7 @@ function submitListener(event) { // function
         if (passInput === password) { // validation
             finalLogin.style.display = "none";
             finalMeta.style.display = "none";
+            finalText.style.display = "none";
         } else {
             confirm.style.display = "inherit"
             confirm.innerHTML = `<p>Wrong <b><i>password</i></b>!</p>` // if wrong password
