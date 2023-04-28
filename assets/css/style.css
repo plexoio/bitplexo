@@ -312,7 +312,7 @@ nav {
     margin-top: 5px;
 }
 
-#logo-container svg {
+#logo-container svg { /* For Vendor script*/
     width: 80px;
     height: 80px;
 }

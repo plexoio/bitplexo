@@ -4,19 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bitplexo | Fiat & Crypto</title>
+    <title>Bitplexo | Fiat & Crypto Swap</title>
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="crypto, fiat, swap, swapping, bitplexo, buy & sell, buy, sell, login, contact, metamask, certificate">
     <meta name="author" content="Frank Arellano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Vendor Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
     <script src="https://kit.fontawesome.com/b0f4c7b367.js" crossorigin="anonymous"></script>
     <script src="https://www.cryptohopper.com/widgets/js/script"></script>
 </head>
 
 <body>
-    <!-- Navbar section-->
+    <!-- Start of Navbar section-->
     <header>
         <nav class="off-item">
             <a id="logo" href="#">
@@ -29,6 +30,7 @@
             </ul>
         </nav>
     </header>
+    <!-- End of Navbar section-->
 
     <!-- First Page / WELCOME -->
     <div class="welcome on-item">
@@ -42,7 +44,6 @@
             <div>
                 <h2>Welcome to Bitplexo</h2>
             </div>
-
             <div>
                 <h2 class="center-title">Start
                     <span class="blue-text">Swapping</span>
@@ -52,7 +53,6 @@
                     <br>Today
                 </h2>
             </div>
-
             <div>
                 <button id="enter-page" class="cta-submit">SWAP</button>
             </div>
@@ -61,15 +61,13 @@
     <!-- End of First Page / WELCOME -->
 
     <!-- Second Page / LOGIN-->
-
     <div class="off-item">
+
         <!-- Description and Login options-->
         <section id="h2-login">
             <h2>Start trading easily by logging in either for <a href="index.html"><span>Fiat</span></a>
                 or <a href="crypto.html"><span>Crypto</span></a>.</h2>
         </section>
-
-        <!-- Login section-->
 
         <!--Traditional secure Login-->
         <div class='inline-block'>
@@ -104,14 +102,14 @@
                 </form>
             </section>
         </div>
-        <div>
-            <!-- CTA Create account-->
-            <a href="#" class="login-text">Don't you have an account yet?</a>
 
-            <!-- OR other Login Option-->
+        <!-- CTA Create account OR other Login Option-->
+        <div>
+            <a href="#" class="login-text">Don't you have an account yet?</a>
             <p class="login-text"><b>OR</b></p>
         </div>
     </div>
+
     <!-- Metamask Login-->
     <a id="metamask-login" href="#" class="on-item">
         <div>
@@ -123,8 +121,15 @@
     <div> <a href="#" class="login-text">Don't you know how to use Metamask?</a></div>
     <!-- End of Second Page / LOGIN-->
 
+    <!-- Start of Third Page / Fiat Swap-->
+    <!-- End of Third Page / Fiat Swap-->
+
+    <!-- Start of Forth Page / Crypto Swap-->
+    <!-- End of Forth Page / Crypto Swap-->
+
     <!-- Footer section-->
     <footer class="footer">
+
         <!-- Social Media buttons-->
         <div id="social-media">
             <a href=""><i class="fa-brands fa-square-facebook"></i></a>
@@ -134,17 +139,22 @@
         </div>
 
         <!-- Vendor Script for crypto prices-->
-            <div id="crypto-widget" class="cryptohopper-web-widget" data-id="2" data-price_format="2" data-coins="bitcoin,ethereum,bnb,cardano,solana" data-numcoins="5" data-realtime="on" data-ticker_speed="80"></div>
+        <div id="crypto-widget" class="cryptohopper-web-widget" data-id="2" data-price_format="2"
+            data-coins="bitcoin,ethereum,bnb,cardano,solana" data-numcoins="5" data-realtime="on"
+            data-ticker_speed="80"></div>
+
         <!-- Copyright section-->
         <div id="copyright"><b>© Bitplexo, Inc. 2023</b></div>
     </footer>
+    <!-- End of Footer section-->
+
+    <!-- Author's scripts-->
     <script src="assets/js/welcome.js"></script>
     <script src="assets/js/login.js"></script>
+
+    <!-- Vendor Scripts-->
     <script src="vendor/js/minimetamask.js" async defer></script>
     <script src="/vendor/js/metamask-login.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4664800579435827"
-    crossorigin="anonymous"></script>
-    
 </body>
 
 </html>
