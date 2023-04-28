@@ -3,7 +3,6 @@
 let onItem = document.getElementsByClassName('on-item');
 let onMeta = onItem[1];
 let offItem = document.getElementsByClassName('off-item');
-
 // Captured Event for actions
 
 function getMeIn(event) {

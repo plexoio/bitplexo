@@ -134,6 +134,7 @@ nav {
     height: 100vh;
     background-color: white;
     text-align: center;
+    z-index: 999;
 }
 
 .welcome h2 {
@@ -326,7 +327,7 @@ nav {
     height: 40px;
     padding-top: 10px;
     padding-bottom: 5px;
-    z-index:999;
+    z-index: -1;
 }
 .footer > div {
 display: inline-block;
