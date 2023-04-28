@@ -12,25 +12,32 @@ const finalText = loginText[2];
 const username = 'carol';
 const password = 'admin123.';
 
-// Variable and function to capture an event and react accordingly
+// Login VALIDATION
 
-function submitListener(event) { // function
+function submitListener(event) { // Validation Function
     event.preventDefault();
-    let userInput = document.getElementById('username-input').value; // user input
-    let passInput = document.getElementById('password-input').value; // user input
+    let userInput = document.getElementById('username-input').value.slice(0, 49); // user input
+    let passInput = document.getElementById('password-input').value.slice(0, 49); // user input
+    let passwordClue = passInput.substring(4);
 
-    if (userInput === username) { // validation
-        if (passInput === password) { // validation
+    if (userInput === username) { // Username comparison
+        if (passInput === password) { // Password comparison and action to Hide page and elements
             finalLogin.style.display = "none";
             finalMeta.style.display = "none";
             finalText.style.display = "none";
-        } else {
+        } else if (passInput.length < 6) { // Error if pass is less tha 6 ch
             confirm.style.display = "inherit"
-            confirm.innerHTML = `<p>Wrong <b><i>password</i></b>!</p>` // if wrong password
+            confirm.innerHTML = `<p>The password <b><i>${passInput}</i></b> is less than 6 characters long!</p>`
+        } else if (passInput.length === 49) { // Error if pass is more than tha 48 ch
+            confirm.style.display = "inherit"
+            confirm.innerHTML = `<p>The password ending in <b><i>${passwordClue}</i></b> is more than 48 characters long!</p>` // if wrong password
+        } else { // Error if pass is 100% wrong
+            confirm.style.display = "inherit"
+            confirm.innerHTML = `<p>The password ending in <b><i>${passwordClue}</i></b> is wrong!</p>` // if wrong password
         }
-    } else {
+    } else { // Error f username is wrong
         confirm.style.display = "inherit"
-        confirm.innerHTML = `<p>Wrong <b><i>username</i></b>!</p>` // if wrong username
+        confirm.innerHTML = `<p>The username <b><i>${userInput}</i></b> is wrong!</p>` // if wrong username
     }
 }
 let loginForm = document.getElementById('my-login'); // call element properties
@@ -41,7 +48,7 @@ loginForm.addEventListener('submit', submitListener); // add listener 'submit' a
 let openCrypto = document.getElementsByClassName('off-item'); // Fetch Crypto swap
 let clickCount = 0;
 
-function preLog(event){
+function preLog(event) {
     clickCount++;
     if (clickCount === 2) {
         finalLogin.style.display = "none";
