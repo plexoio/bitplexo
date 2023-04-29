@@ -253,7 +253,7 @@ nav {
     width: 70%;
 }
 
-#faq {
+.faq {
     display: inline;
     float: right;
     font-size: 18px;

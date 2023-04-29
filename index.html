@@ -11,6 +11,7 @@
     <meta name="author" content="Frank Arellano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swap.css">
     <!-- Vendor Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
     <script src="https://kit.fontawesome.com/b0f4c7b367.js" crossorigin="anonymous"></script>
@@ -74,7 +75,7 @@
         <div class='inline-block'>
             <section id="login-form">
                 <h2><a href="index.html"><span>Login</span></a></h2>
-                <div id="faq">
+                <div class="faq">
                     <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
                 </div>
                 <form id="my-login" action="https://formdump.codeinstitute.net/" method="POST">
@@ -106,7 +107,7 @@
 
         <!-- CTA Create account OR other Login Option-->
         <div>
-            <a href="#" class="login-text">Don't you have an account yet?</a>
+            <a href="contact.html" class="login-text">Don't you have an account yet?</a>
             <p class="login-text"><b>OR</b></p>
         </div>
     </div>
@@ -119,10 +120,60 @@
             <div id="logo-container"></div>
         </div>
     </a>
-    <div id="elevate"> <a href="#" class="login-text">Don't you know how to use Metamask?</a></div>
+    <div id="elevate"> <a href="https://www.youtube.com/watch?v=-HTubEJ61zU" class="login-text" target="_blank"
+            rel="noopener noreferrer nofollow">Don't you know how to use Metamask?</a></div>
     <!-- End of Second Page / LOGIN-->
 
     <!-- Start of Third Page / Fiat Swap-->
+    <div id="fiat-swap">
+        <h2>Fiat Swap</h2>
+        <div>
+            <section>
+                <h2>balances</h2>
+            </section>
+
+            <section>
+                <h4>Switch to Crypto</h4>
+                <div class="faq">
+                    <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
+                </div>
+                <form action="" method="post">
+
+                    <div style="display: block">
+                        <div style="display: inline;">
+                            <label for="fiat-from">From</label>
+                            <select name="" id="fiat-from"></select>
+                        </div>
+                        <div style="display: inline;">
+                            <img src="assets/img/192x192.png" width="50" height="50" alt="">
+                        </div>
+                        <div style="display: inline;">
+                            <label for="fiat-to">to</label>
+                            <select name="" id="fiat-to"></select>
+                        </div>
+                    </div>
+
+                    <div style="display: block">
+                        <div style="display: inline">
+                            <label for="fiat-enter">Amount</label>
+                            <input id="fiat-enter" type="text">
+                        </div>
+                        <div style="display: inline">
+                            <label for="fiat-receive">Amount</label>
+                            <input id="fiat-receive" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" class="swap">
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2>Limits</h2>
+            </section>
+        </div>
+    </div>
     <!-- End of Third Page / Fiat Swap-->
 
     <!-- Start of Forth Page / Crypto Swap-->
