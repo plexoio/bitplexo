@@ -1,4 +1,60 @@
+/*General Styling*/
+
+.block {
+    display: block;
+}
+.block > div {
+    display: inline;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
 /* Fiat Swap*/
+
+form {
+    margin-top: 20px;
+}
+
+#balance-fiat {
+    width: 70px;
+}
+
+#limit-fiat {
+    width: 70px;
+}
+
+.circle-swap {
+    border: 1px solid #3498db;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 40px;
+    color: #3498db;
+}
+
+select {
+    padding: 5px;
+    border:1px solid #3498db;
+    border-radius: 5px;
+}
+.float-left > label {
+    display: block;
+}
+
+.float-right > label {
+    display: block;
+}
+#fiat-enter {
+    width: 50%;
+    padding: 5px;
+}
+#fiat-receive {
+    width: 50%;
+    padding: 5px;
+    background-color:whitesmoke;
+}
 
 #fiat-swap > section > h4{
     display: inline-block;
@@ -6,15 +62,10 @@
 #fiat-swap section {
     display: inline-block;
     border: 1px solid #3498db;
-    padding: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
 }
-
-fieldset {
-    display: inline-block;
-    border: 1px solid #3498db;
-    padding: 20px;
-}
-
 .swap {
     background-color: #ffffff;
     font-size: 18px;

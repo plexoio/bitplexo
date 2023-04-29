@@ -125,55 +125,80 @@
     <!-- End of Second Page / LOGIN-->
 
     <!-- Start of Third Page / Fiat Swap-->
-    <div id="fiat-swap">
-        <h2>Fiat Swap</h2>
-        <div>
-            <section>
-                <h2>balances</h2>
-            </section>
+    <section id="fiat-swap">
+        <h2><span>Fiat Swap</span></h2>
+        <!-- BALANCES-->
+        <section id="balance-fiat">
+            <h4>balances</h4>
+        </section>
 
-            <section>
-                <h4>Switch to Crypto</h4>
-                <div class="faq">
-                    <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
-                </div>
-                <form action="" method="post">
+        <!-- TITLE and FAQ-->
+        <section>
+            <h4>Switch to <span>Crypto</span></h4>
+            <div class="faq">
+                <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
+            </div>
 
-                    <div style="display: block">
-                        <div style="display: inline;">
-                            <label for="fiat-from">From</label>
-                            <select name="" id="fiat-from"></select>
-                        </div>
-                        <div style="display: inline;">
-                            <img src="assets/img/192x192.png" width="50" height="50" alt="">
-                        </div>
-                        <div style="display: inline;">
-                            <label for="fiat-to">to</label>
-                            <select name="" id="fiat-to"></select>
-                        </div>
+            <!-- Swap FORM-->
+            <form class="form" action="" method="post">
+
+                <!-- Swap FROM-->
+                <div class="block">
+                    <div class="float-left">
+                        <label for="fiat-from">Coin</label>
+                        <select name="fiat-from" id="fiat-from">
+                            <option value="">Select</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="pen">PEN</option>
+                            <option value="cny">CNY</option>
+                        </select>
                     </div>
 
-                    <div style="display: block">
-                        <div style="display: inline">
-                            <label for="fiat-enter">Amount</label>
-                            <input id="fiat-enter" type="text">
-                        </div>
-                        <div style="display: inline">
-                            <label for="fiat-receive">Amount</label>
-                            <input id="fiat-receive" type="text">
-                        </div>
-                    </div>
+                    <!-- CIRCLE Swap LOGO-->
                     <div>
-                        <input type="submit" class="swap">
+                        <i class="circle-swap fa-solid fa-right-left"></i>
                     </div>
-                </form>
-            </section>
 
-            <section>
-                <h2>Limits</h2>
-            </section>
-        </div>
-    </div>
+                    <!-- Swap TO -->
+                    <div class="float-right">
+                        <label for="fiat-to">Coin</label>
+                        <select name="fiat-to" id="fiat-to">
+                            <option value="">Select</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="pen">PEN</option>
+                            <option value="cny">CNY</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <!-- Amount SEND -->
+                    <div class="float-left">
+                        <label for="fiat-enter">Send</label>
+                        <input id="fiat-enter" type="text">
+                    </div>
+
+                    <!-- Amount RECEIVE -->
+                    <div class="float-right">
+                        <label for="fiat-receive">Receive</label>
+                        <input id="fiat-receive" type="text" readonly>
+                    </div>
+                </div>
+
+                <!-- Swap BUTTON -->
+                <div>
+                    <input type="submit" class="swap" value="Swap">
+                </div>
+            </form>
+        </section>
+        <!-- LIMITS -->
+        <section id="limit-fiat">
+            <h4>Limits</h4>
+        </section>
+    </section>
     <!-- End of Third Page / Fiat Swap-->
 
     <!-- Start of Forth Page / Crypto Swap-->
