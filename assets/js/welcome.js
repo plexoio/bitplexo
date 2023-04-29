@@ -7,9 +7,9 @@ let mainFooter = footerZ[0];
 
 // Captured Event for actions
 function getMeIn(event) {
-    
+
     let onItems;
-    for (onItems of onItem ) { // Hide elements
+    for (onItems of onItem) { // Hide elements
         onItems.style.display = 'none';
     }
 

@@ -44,7 +44,7 @@ function submitListener(event) { // Validation Function
 // CTA to login Fiat & Crypto
 
 let toFiat = document.getElementsByClassName('to-fiat'); // for FIAT nav connection
-for (fiat=0; fiat < toFiat.length; fiat++) {
+for (fiat = 0; fiat < toFiat.length; fiat++) {
     toFiat[fiat].addEventListener('click', submitListener);
 }
 

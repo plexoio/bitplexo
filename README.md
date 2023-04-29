@@ -30,18 +30,25 @@ Please note that this project is not available for public deployment; it is inte
 
 ## Index <a name="index"></a>
 
-1. [Strategy Plane - Reason, Solution and Value](#strategy-plane)
-2. [Scope Plane - Feature and Capability](#scope-plane)
-3. [Structure Plane - Content, Priority and Organization](#structure-plane)
-4. [Skeleton Plane - Layout, Interaction and Relationship](#skeleton-plane)
-5. [Surface Plane - Color, Typography, Effect and Images](#surface-plane)
-6. [Technologies Used](#technologies)
-7. [Actual Features Explained](#features)
-8. [Future Features Explained](#f-features)
-9. [Bugs & Testing Results](#bugs-testing)
-10. [Development Process](#development)
-11. [Deployment Process](#deployment)
-12. [Credits](#credits)
+- [Bitplexo Project](#bitplexo-project)
+  - [Index <a name="index"></a>](#index-)
+  - [Badges](#badges)
+  - [Strategy Plane <a name="strategy-plane"></a> | #](#strategy-plane---)
+    - [Research](#research)
+    - [Research Graphic](#research-graphic)
+  - [Scope Plane <a name="scope-plane"></a> | #](#scope-plane---)
+    - [User Story](#user-story)
+  - [Structure Plane <a name="structure-plane"></a> | #](#structure-plane---)
+  - [Skeleton Plane <a name="skeleton-plane"></a> | #](#skeleton-plane---)
+  - [Surface Plane <a name="surface-plane"></a> | #](#surface-plane---)
+    - [Color](#color)
+      - [Pallet](#pallet)
+    - [Layout](#layout)
+    - [Fonts](#fonts)
+    - [Images](#images)
+    - [Order](#order)
+    - [Sequences](#sequences)
+  - [Technologies Used <a name="technologies"></a> | #](#technologies-used---)
 
 ## Badges
 
@@ -63,19 +70,19 @@ These insights stem from comprehensive research, as evidenced by the accompanyin
 
 ### Research
 
-| Goals                  | Relevancy (0-5) | Viability (0-5) | N. Items (0-~) |
-| ---------------------- | --------------- | --------------- | ------------- |
-| Welcome Alert          | 3               | 5               |               |
-| Fiat Swap <br>- Secure Login <br>- FAQ button | 5           | 2               |               |
-| Crypto Swap <br>- Metamask Login <br>- FAQ button | 5         | 2               |               |
-| Contact page           | 5               | 5               |               |
-| Buy/sell option <br>- Fiat & Crypto section | 3         | 2               |               |
-| SSL Badge              | 5               | 5               |               |
-| CAPTCHA Verification   | 3               | 2               |               |
-| N. Items               |                 |                 | 7             |
-| Max. Points            |                 |                 | 35            |
-| Results                | 29              | 24              |               |
-| Percentage             | 82.85%<br>(Strategy)| 65.71%<br>(Scope)   |               |
+| Goals                                             | Relevancy (0-5)      | Viability (0-5)   | N. Items (0-~) |
+| ------------------------------------------------- | -------------------- | ----------------- | -------------- |
+| Welcome Alert                                     | 3                    | 5                 |                |
+| Fiat Swap <br>- Secure Login <br>- FAQ button     | 5                    | 2                 |                |
+| Crypto Swap <br>- Metamask Login <br>- FAQ button | 5                    | 2                 |                |
+| Contact page                                      | 5                    | 5                 |                |
+| Buy/sell option <br>- Fiat & Crypto section       | 3                    | 2                 |                |
+| SSL Badge                                         | 5                    | 5                 |                |
+| CAPTCHA Verification                              | 3                    | 2                 |                |
+| N. Items                                          |                      |                   | 7              |
+| Max. Points                                       |                      |                   | 35             |
+| Results                                           | 29                   | 24                |                |
+| Percentage                                        | 82.85%<br>(Strategy) | 65.71%<br>(Scope) |                |
 
 We created a list of items, elements, or features that should be included in this iteration. After conducting research, we have compiled the following results, which will assist us in developing the next point for further understading and development:
 
@@ -113,11 +120,11 @@ For this MVP iteration, we have decided to include features and functionalities 
 
 
 
-|               Condition               |                             Iteration                              |                      Goals                      |
-| :-----------------------------------: | :----------------------------------------------------------------: | :---------------------------------------------: |
+|               Condition               |                              Iteration                              |                      Goals                      |
+| :-----------------------------------: | :-----------------------------------------------------------------: | :---------------------------------------------: |
 |              Limited use              |           - Fiat Swap<br>- Crypto Swap<br>- contact.html            |               Culture acquisition               |
-|             Simple design             |                 - Buy & Sell buttons<br>- CAPTCHA or SSL Badge <br> - Login methods                |                  Tech Showcase                  |
-| Low leading rates<br>& Non-functional | - Buy & Sell buttons<br>- Fiat & Crypto Swap<br>| Long-term Investment<br>& Future Implementation |
+|             Simple design             | - Buy & Sell buttons<br>- CAPTCHA or SSL Badge <br> - Login methods |                  Tech Showcase                  |
+| Low leading rates<br>& Non-functional |          - Buy & Sell buttons<br>- Fiat & Crypto Swap<br>           | Long-term Investment<br>& Future Implementation |
 
 The table displays what we can achieve in this iteration, with our main goal being to showcase the most important features and technologies, such as `Fiat Swap and Crypto Swap` (with limited use) in a safe environment before the actual site is launched. This is why it has been tagged as `Culture Acquisition`.
 
@@ -133,13 +140,13 @@ Note: In this context, "subject" refers to a user, prospect, or stakeholder.
 
 ### User Story
 
-| Scenario                                                             | Solution                                                                                                                                |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Subject gets interested in the Bitplexo web3 app                      | Subject discovers the Bitplexo `MVP` release                                                                                             |
-| Subject wants to learn `how` and `where` to swap `Fiat & Crypto`           | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site          |
-| Subject wants to know how to `identify` themselves on the site         | Subject learns that there are two ways to log in, one for `Fiat` (traditional) and another for `Crypto` (decentralized)            |
-| Subject wants to interact more with the app                          | Subject discovers the various types of `data` available once logged in, as well as the `Buy & Sell` capabilities                            |
-| Subject has `questions` and wants to speak directly with an agent      | Subject finds a question mark `button` on the Fiat and Crypto swapping section, as well as a `contact` page for support and assistance        |
+| Scenario                                                          | Solution                                                                                                                                      |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subject gets interested in the Bitplexo web3 app                  | Subject discovers the Bitplexo `MVP` release                                                                                                  |
+| Subject wants to learn `how` and `where` to swap `Fiat & Crypto`  | Subject can see a clear description of the available functionalities, including the Fiat and Crypto swapping feature, upon accessing the site |
+| Subject wants to know how to `identify` themselves on the site    | Subject learns that there are two ways to log in, one for `Fiat` (traditional) and another for `Crypto` (decentralized)                       |
+| Subject wants to interact more with the app                       | Subject discovers the various types of `data` available once logged in, as well as the `Buy & Sell` capabilities                              |
+| Subject has `questions` and wants to speak directly with an agent | Subject finds a question mark `button` on the Fiat and Crypto swapping section, as well as a `contact` page for support and assistance        |
 
 By aligning our `scope` with the results of our research on the Strategy plane, we have established a clear intention for our MVP iteration. This will enable us to build a solid foundation for our next phase, `Structure`.
 
@@ -210,3 +217,94 @@ We strived to keep everything simple, intuitive, and repetitive. At the same tim
 Our next stop is the `Surface plane`.
 
 ## Surface Plane <a name="surface-plane"></a> | [#](#index)
+
+After conducting research (strategy), considering the project scope, brainstorming ideas for the structure, and engaging in discussions to create a project skeleton, we were ready to move forward with creating a prototype/demo using wireframes. 
+
+All of these planning stages were essential to reach this point (Surface), and we understand that it's only when we start building or coding that we may discover any gaps or oversights. Therefore, it makes more sense to start finally bringing our ideas to life now. 
+
+We're excited to see how our project takes shape and how we continue to refine it along the way.
+
+**Approach:**
+
+Our approach to the project is similar to the mindset of Isaac Newton, who said, `"My method is different. I do not rush into actual work. When I get a new idea, I start at once building it up in my imagination, and make improvements and operate the device in my mind. When I have gone so far as to embody everything in my invention, every possible improvement I can think of, and when I see no fault anywhere, I put into concrete form the final product of my brain."` Similarly, we have taken the necessary steps to plan and refine our project before moving on to the programming stage.
+
+As part of this process, we are currently focusing on the surface plane, which involves designing the interface and considering how users will interact with and perceive the product as well. This includes creating a positive visual language and context for each step and interaction to ensure efficiency and a seamless user experience. 
+
+These details are crucial for the success of the project, and we are dedicated to getting them right:
+
+### Color
+
+|                                                                  | Color Type      | Color Name      | Hex Code  |
+| ---------------------------------------------------------------- | --------------- | --------------- | --------- |
+| ![Color](https://via.placeholder.com/50x50/3498db/3498db?text=+) | Primary Color   | Shade of Blue   | `#3498db` |
+| ![Color](https://via.placeholder.com/50x50/f5f5f5/f5f5f5?text=+) | Secondary Color | Whitesmoke      | `#f5f5f5` |
+| ![Color](https://via.placeholder.com/50x50/808080/808080?text=+) | Secondary Color | Shade of gray   | `#808080` |
+| ![Color](https://via.placeholder.com/50x50/3a3a3a/3a3a3a?text=+) | Secondary Color | Shade of Black  | `#3a3a3a` |
+| ![Color](https://via.placeholder.com/50x50/f2f2f2/f2f2f2?text=+) | Secondary Color | Shade of White  | `#f2f2f2` |
+| ![Color](https://via.placeholder.com/50x50/e46e54/e46e54?text=+) | Secondary Color | Shade of red    | `#E46E54` |
+| ![Color](https://via.placeholder.com/50x50/ff6600/ff6600?text=+) | Secondary Color | Shade of orange | `#ff6600` |
+
+
+#### Pallet
+
+The following color palette was used as a reference throughout the project:
+
+- [My Color Space](https://mycolor.space/?hex=%233498DB&sub=1)
+
+
+### Layout
+
+- The welcoming page features is a full-page banner with a `h2-sized` title and a `Swap` button to enter the system.
+
+- For the login section, `containers` and a `form` are used to manage it. All elements are well-connected and interactive, thanks to `JavaScript`.
+
+- The swapping sections for `Fiat & Crypto` are `containers` holding `forms` for the swapping functionality. In every section where a `submit or call-to-action` is present, the same style is used to maintain consistency.
+
+- The `contact form` also follows the consistency of the containers and features a powerful form and a related `submit button`, as mentioned before.
+
+- Finally, the layouts will naturally adjust to different `sizes` when media queries are set for `responsive design`.
+
+### Fonts
+
+- We used `Roboto` for all fonts until specified otherwise. 
+
+- We used `Poppins` for some titles and subtitles.
+
+### Images
+
+- No additional images were needed, except for the `interactive logo` of a third-party service about `Metamask` on the login page.
+
+### Order
+
+- We prioritized the elements as already described throughout the different planes: Welcome page > Login Page > Fiat or Crypto Swap > Contact page.
+
+- The navbar and footer are always present (sticky) after the welcome page.
+
+- For the Contact page, a container similar to the others was applied to maintain consistency.
+
+### Sequences
+
+- Attention to the `progressive disclosure` allowed us to build a smooth application flow. Users see the `welcome page` first, then they can `log in` using either Fiat or Crypto methods. Once logged in, they can start `swapping` in a straightforward manner. If they have any inquiries, they can visit the `contact page` as well.
+
+- The `swapping pages` are the core of the project and what users are looking for in most cases. They are consistent and allow users to swap from one coin to another and `confirm` the swap with a submit `button`.
+
+For each section and interaction, economy had to be taken into account, with the most important elements easily recognized. We had already noticed many patterns throughout the product layouts and interactions. It was readable, with colors creating good contrasts, and different fonts were added when necessary.
+
+Users cannot get lost on the site as we have ensured that value is evident everywhere.
+
+**We had to be careful of the following concerns:**
+
+- Repetition
+- Contrast
+- Proximity
+- Alignment
+- Accessibility
+- Interaction
+- Visual engagement
+- Easy learning experience
+
+We focused on keeping things as simple as possible, presenting fewer choices to the users while highlighting concrete features and content.
+
+After considering these factors, we were able to turn our ideas from the skeleton and surface into code with ease. The coding process was less complicated and more enjoyable. This approach required less time, energy, and other resources, resulting in less human work and fewer errors, and ultimately, a nobler product.
+
+## Technologies Used <a name="technologies"></a> | [#](#index)

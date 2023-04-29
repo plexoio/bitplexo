@@ -50,7 +50,7 @@ span {
 }
 
 span:hover {
-    color:#3a3a3a;
+    color: #3a3a3a;
     transition: 0.3s;
 }
 
@@ -282,7 +282,7 @@ nav {
 #confirm-input {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #e74c3c;
+    background-color: #E46E54;
     display: none;
     border-radius: 15px;
     margin-left: 20%;

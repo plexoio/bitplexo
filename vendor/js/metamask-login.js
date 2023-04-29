@@ -61,11 +61,11 @@ function displayError(error) {
 // Author's adapted code
 
 let toCrypto = document.getElementsByClassName('to-crypto'); // for CRYPTO nav connection
-for (fiat=0; fiat < toCrypto.length; fiat++) {
-    toCrypto[fiat].addEventListener('click', (event) => {
-      event.preventDefault();
-      connect();
-    })
+for (fiat = 0; fiat < toCrypto.length; fiat++) {
+  toCrypto[fiat].addEventListener('click', (event) => {
+    event.preventDefault();
+    connect();
+  })
 }
 
 // Attach event listeners to the Metamask link to trigger the connect() function on click or touch
