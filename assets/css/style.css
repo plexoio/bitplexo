@@ -47,6 +47,7 @@ a:hover {
 span {
     color: #3498db;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 span:hover {
@@ -310,7 +311,6 @@ nav {
     color: #3498db;
     transition: 0.3s;
 }
-
 
 /* Metamask Login*/
 

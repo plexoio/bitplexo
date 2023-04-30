@@ -63,6 +63,10 @@ select {
     background-color: whitesmoke;
 }
 
+#fiat-swap {
+    display: none;
+}
+
 #fiat-swap>section>h4 {
     display: inline-block;
 }

@@ -31,3 +31,4 @@ for (let clickTitle = 0; clickTitle < titleEnter.length; clickTitle++) {
 // Welcome Button listener
 let welcomeButton = document.getElementById('enter-page');
 welcomeButton.addEventListener('click', getMeIn);
+welcomeButton.addEventListener('touchend', getMeIn); // for devices

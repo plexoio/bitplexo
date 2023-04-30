@@ -6,6 +6,7 @@ const finalMeta = closeMeta[1];
 const confirm = document.getElementById('confirm-input');
 const loginText = document.getElementsByClassName('login-text');
 const finalText = loginText[2];
+const openFiat = document.getElementById('fiat-swap');
 
 // User data
 
@@ -25,6 +26,7 @@ function submitListener(event) { // Validation Function
             finalLogin.style.display = "none";
             finalMeta.style.display = "none";
             finalText.style.display = "none";
+            openFiat.style.display = "inline-block";
         } else if (passInput.length < 6) { // Error if pass is less tha 6 ch
             confirm.style.display = "inherit"
             confirm.innerHTML = `<p>The password <b><i>${passInput}</i></b> is less than 6 characters long!</p>`
