@@ -59,8 +59,8 @@ input {
     display: inline;
     color: #3498db;
     border: 1px solid #808080;
-    margin-left: 10px;
     margin-top: 20px;
+    margin-left: 10px;
     font-size: 18px;
     border-radius: 5px;
 }
@@ -93,6 +93,13 @@ b {
 i {
     color: inherit;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: #3a3a3a;
+    border: 1px solid #3a3a3a;
+    transition: 0.3s;
 }
 
 /* Nav section*/
