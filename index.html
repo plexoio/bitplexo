@@ -130,11 +130,14 @@
         <!-- BALANCES-->
         <section id="balance-fiat">
             <h4>balances</h4>
+            <ol>
+
+            </ol>
         </section>
 
         <!-- TITLE and FAQ-->
         <section>
-            <h4>Switch to <span>Crypto</span></h4>
+            <h4 class="left-balance">Switch to <span class="switch-crypto">Crypto</span></h4>
             <div class="faq">
                 <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
             </div>
@@ -145,7 +148,7 @@
                 <!-- Swap FROM-->
                 <div class="block">
                     <div class="float-left">
-                        <label for="fiat-from">Coin</label>
+                        <label for="fiat-from">Fiat</label>
                         <select name="fiat-from" id="fiat-from">
                             <option value="">Select</option>
                             <option value="usd">USD</option>
@@ -162,7 +165,7 @@
 
                     <!-- Swap TO -->
                     <div class="float-right">
-                        <label for="fiat-to">Coin</label>
+                        <label for="fiat-to">Fiat</label>
                         <select name="fiat-to" id="fiat-to">
                             <option value="">Select</option>
                             <option value="usd">USD</option>
@@ -197,11 +200,94 @@
         <!-- LIMITS -->
         <section id="limit-fiat">
             <h4>Limits</h4>
+            <ol>
+
+            </ol>
         </section>
     </section>
     <!-- End of Third Page / Fiat Swap-->
 
     <!-- Start of Forth Page / Crypto Swap-->
+    <section id="crypto-swap">
+        <h2><span class="to-crypto">Crypto Swap</span></h2>
+        <!-- BALANCES-->
+        <section id="balance-crypto">
+            <h4>balances</h4>
+            <ol>
+
+            </ol>
+        </section>
+
+        <!-- TITLE and FAQ-->
+        <section>
+            <h4 class="left-balance">Switch to <span class="switch-fiat">Fiat</span></h4>
+            <div class="faq">
+                <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
+            </div>
+
+            <!-- Swap FORM-->
+            <form class="form" action="" method="post">
+
+                <!-- Swap FROM-->
+                <div class="block">
+                    <div class="float-left">
+                        <label for="crypto-from">Crypto</label>
+                        <select name="crypto-from" id="crypto-from">
+                            <option value="">Select</option>
+                            <option value="eth">ETH</option>
+                            <option value="btc">BTC</option>
+                            <option value="ltc">LTC</option>
+                            <option value="usdt">USDT</option>
+                        </select>
+                    </div>
+
+                    <!-- CIRCLE Swap LOGO-->
+                    <div>
+                        <i class="circle-swap fa-solid fa-right-left"></i>
+                    </div>
+
+                    <!-- Swap TO -->
+                    <div class="float-right">
+                        <label for="crypto-to">Crypto</label>
+                        <select name="crypto-to" id="crypto-to">
+                            <option value="">Select</option>
+                            <option value="eth">ETH</option>
+                            <option value="btc">BTC</option>
+                            <option value="ltc">LTC</option>
+                            <option value="usdt">USDT</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <!-- Amount SEND -->
+                    <div class="float-left">
+                        <label for="crypto-enter">Send</label>
+                        <input id="crypto-enter" type="text">
+                    </div>
+
+                    <!-- Amount RECEIVE -->
+                    <div class="float-right">
+                        <label for="crypto-receive">Receive</label>
+                        <input id="crypto-receive" type="text" readonly>
+                    </div>
+                </div>
+
+                <!-- Swap BUTTON -->
+                <div>
+                    <input type="submit" class="swap" value="Swap">
+                </div>
+            </form>
+        </section>
+        <!-- LIMITS -->
+        <section id="limit-crypto">
+            <h4>Limits</h4>
+            <ol>
+                
+            </ol>
+        </section>
+    </section>
     <!-- End of Forth Page / Crypto Swap-->
 
     <!-- Footer section-->
@@ -233,6 +319,8 @@
     <!-- Author's scripts-->
     <script src="assets/js/welcome.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/switch.js"></script>
+    <script src="assets/js/swap.js"></script>
 
     <!-- Vendor Scripts-->
     <script src="vendor/js/minimetamask.js" async defer></script>

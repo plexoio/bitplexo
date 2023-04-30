@@ -6,7 +6,6 @@ const finalMeta = closeMeta[1];
 const confirm = document.getElementById('confirm-input');
 const loginText = document.getElementsByClassName('login-text');
 const finalText = loginText[2];
-const openFiat = document.getElementById('fiat-swap');
 
 // User data
 
@@ -41,15 +40,8 @@ function submitListener(event) { // Validation Function
         confirm.style.display = "inherit"
         confirm.innerHTML = `<p>The username <b><i>${userInput}</i></b> is wrong!</p>` // if wrong username
     }
+    cryptoSwitch.style.display = "none"; // Variable on switch.js
 }
-
-// CTA to login Fiat & Crypto
-
-let toFiat = document.getElementsByClassName('to-fiat'); // for FIAT nav connection
-for (fiat = 0; fiat < toFiat.length; fiat++) {
-    toFiat[fiat].addEventListener('click', submitListener);
-}
-
 
 let loginForm = document.getElementById('my-login'); // call element properties
 loginForm.addEventListener('submit', submitListener); // add listener 'submit' and add function

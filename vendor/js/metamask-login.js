@@ -13,10 +13,11 @@ async function connect() {
       alert(`Logged in as ${currentAccount}`);
 
       // Author's owned code
-      let openCrypto = document.getElementsByClassName('off-item'); // Fetch Crypto swap
-      finalLogin.style.display = "none";
-      finalMeta.style.display = "none";
-      finalText.style.display = "none";
+      finalLogin.style.display = "none"; // on login.js
+      finalMeta.style.display = "none"; // on login.js
+      finalText.style.display = "none"; // on login.js
+      cryptoSwitch.style.display = "inline-block"; // on switch.js
+      openFiat.style.display = "none"; // on switch.js
     } catch (error) {
       // If an error occurs, display a custom error message in the console or on the webpage
       displayError(error);

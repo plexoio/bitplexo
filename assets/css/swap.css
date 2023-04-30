@@ -96,3 +96,50 @@ select {
     color: white;
     transition: 0.3s;
 }
+
+/* Crypto Swap */
+
+/* Fiat Swap*/
+
+#balance-crypto {
+    width: 70px;
+}
+
+#limit-crypto {
+    width: 70px;
+}
+
+#crypto-enter {
+    width: 50%;
+    padding: 5px;
+}
+
+#crypto-receive {
+    width: 50%;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+#crypto-swap {
+    display: none;
+}
+
+#crypto-swap {
+    display: none;
+}
+
+#crypto-swap>section>h4 {
+    display: inline-block;
+}
+
+.left-balance {
+    margin-left: 18px;
+}
+
+#crypto-swap section {
+    display: inline-block;
+    border: 1px solid #3498db;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
