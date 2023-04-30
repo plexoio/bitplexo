@@ -1,0 +1,1 @@
+let swapFiat = document.getElementById('fiat-swap');
