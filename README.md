@@ -50,6 +50,7 @@ Please note that this project is not available for public deployment; it is inte
     - [Sequences](#sequences)
   - [Technologies Used <a name="technologies"></a> | #](#technologies-used---)
 
+
 ## Badges
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
