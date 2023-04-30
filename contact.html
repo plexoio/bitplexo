@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bitplexo | Contact us</title>
+    <title>Bitplexo | Fiat & Crypto Swap</title>
     <meta name="description" content="">
     <meta name="keywords"
-        content="contact, faq, info, crypto, fiat, swap, swapping, bitplexo, buy & sell, buy, sell, login, contact, metamask, certificate">
+        content="crypto, fiat, swap, swapping, bitplexo, buy & sell, buy, sell, login, contact, metamask, certificate">
     <meta name="author" content="Frank Arellano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,19 +21,43 @@
 <body>
     <!-- Start of Navbar section-->
     <header>
-        <nav class="on-item">
+        <nav class="off-item">
             <a id="logo" href="index.html">
                 <img src="assets/img/192x192.png" alt="Logo of Bitplexo">
             </a>
             <ul id="menu-bar">
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="to-crypto" href="#">Crypto</a></li>
-                <li><a class="to-fiat" href="#">Fiat</a></li>
+                <li><a class="to-crypto" href="index.html">Crypto</a></li>
+                <li><a class="to-fiat" href="index.html">Fiat</a></li>
             </ul>
         </nav>
     </header>
     <!-- End of Navbar section-->
+    <!-- First Page / WELCOME -->
+    <div class="welcome on-item">
+        <!-- Logo -->
+        <section>
+            <a href="index.html">
+                <div class="bitlogo"></div>
+            </a>
+        </section>
 
+        <!-- Description and Enter Button-->
+        <div>
+            <h2 class="center-title">Support
+                <span class="blue-text">Service</span>
+                <br>
+                <span class="blue-text">Crypto</span>
+                <span class="blue-text">&</span>
+                <span class="blue-text">Fiat</span>
+                <br>24/7
+            </h2>
+        </div>
+        <div>
+            <button id="enter-page" class="cta-submit">START</button>
+        </div>
+    </div>
+    <!-- End of First Page / WELCOME -->
 
     <!-- Footer section-->
     <footer class="footer">
@@ -64,6 +88,8 @@
     <!-- Author's scripts-->
     <script src="assets/js/welcome.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/switch.js"></script>
+    <script src="assets/js/swap.js"></script>
 
     <!-- Vendor Scripts-->
     <script src="/vendor/js/metamask-login.js"></script>

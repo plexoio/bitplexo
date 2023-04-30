@@ -32,6 +32,13 @@
     padding: 20px;
     font-size: 40px;
     color: #3498db;
+    transition: 0.3s;
+}
+
+.circle-swap:hover {
+    border: 1px solid #3a3a3a;
+    color: #3a3a3a;
+    transition: 0.3s;
 }
 
 select {
