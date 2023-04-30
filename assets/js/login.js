@@ -7,11 +7,6 @@ const confirm = document.getElementById('confirm-input');
 const loginText = document.getElementsByClassName('login-text');
 const finalText = loginText[2];
 
-// User data
-
-const username = 'carol';
-const password = 'admin123.';
-
 // Login VALIDATION
 
 function submitListener(event) { // Validation Function
