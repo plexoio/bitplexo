@@ -18,6 +18,7 @@ function loginListener(event) { // Validation Function
     if (userInput === username) { // Username comparison see users.js for more
         if (passInput === password) { // Password comparison users.js for more
             openFiat.style.display = "inline-block";
+            loadBalanceFiat(event);
             for (let backSleep of backToSleep) {
                 backSleep.style.display = "none";
             }

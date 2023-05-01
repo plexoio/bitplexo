@@ -84,6 +84,15 @@ select {
     background-color: white;
     border-radius: 15px;
     margin-top: 15px;
+    width: auto;
+}
+
+ul {
+    text-align: left;
+    padding: 10px;
+    background-color:whitesmoke;
+    border-radius: 15px;
+    list-style:none;
 }
 
 .swap {

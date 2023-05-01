@@ -206,6 +206,7 @@ nav {
 #h2-login>h2 {
     font-size: 22px;
     display: inline-block;
+    padding-left: 60px;
 }
 
 #login-form {
