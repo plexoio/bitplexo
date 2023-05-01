@@ -15,8 +15,8 @@ function loginListener(event) { // Validation Function
     let passwordClue = passInput.substring(4);
     const confirm = document.getElementById('confirm-input');
 
-    if (userInput === username) { // Username comparison
-        if (passInput === password) { // Password comparison and action to Hide page and elements
+    if (userInput === username) { // Username comparison see users.js for more
+        if (passInput === password) { // Password comparison users.js for more
             openFiat.style.display = "inline-block";
             for (let backSleep of backToSleep) {
                 backSleep.style.display = "none";
