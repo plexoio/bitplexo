@@ -1,0 +1,175 @@
+/* Mobile devices (small screens)*/
+
+@media only screen and (max-width: 320px) {
+
+    /* Welcome page*/
+
+    .media-small {
+        margin-top: 25vw;
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+    }
+
+    #enter-page {
+        margin-top:20px;
+    }
+
+    /* Navbar*/
+
+    nav {
+        width: 90vw;
+    }
+
+    #logo {
+        padding-left: 0;
+    }
+
+    #menu-bar {
+        list-style: none;
+        padding-right: 25px;
+    }
+
+    /* Login form*/
+
+    #to-left>input {
+        border: none;
+        width: 100%;
+    }
+
+    #login-form {
+        width: 70vw;
+        display: inline-block;
+    }
+
+
+    /* Fiat Swap page*/
+
+    #fiat-swap {
+        display: none;
+        margin-top: -100px;
+    }
+
+    #fiat-swap section {
+        width: auto;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .float-right {
+        float: none;
+    }
+
+    .float-right>label {
+        margin-top: 10px;
+    }
+
+    .float-left {
+        float: none;
+    }
+
+    .block>div {
+        display: inline-block;
+    }
+
+    .fa-solid, .fas {
+        margin: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #limit-fiat {
+        margin-bottom: 150px;
+    }
+
+
+    /* Crypto Swap page*/
+
+    #crypto-swap {
+        display: none;
+        margin-top: -100px;
+    }
+
+    #crypto-swap section {
+        width: auto;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #limit-crypto {
+        margin-bottom: 150px;
+    }
+
+    /* Footer and General Styling*/
+    #elevate {
+        padding-bottom: 150px;
+    }
+
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+
+    #crypto-widget {
+        display: none;
+    }
+
+    #copyright {
+        float: none;
+        padding-right: 5%;
+    }
+
+    #social-media {
+        float: none;
+        padding-left: 0;
+    }
+
+}
+
+/*Tablets (portrait orientation)*/
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+    /* General Styling*/
+
+    /*Swap general styling*/
+
+
+}
+
+/*Tablets (landscape orientation) and small desktops*/
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /*General Styling*/
+
+    /*Swap  general styling*/
+
+
+
+}
+
+/*Desktop Screen Size*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    /* General Styling*/
+
+
+}
+
+/*Large desktops and high-resolution screens:*/
+
+@media only screen and (min-width: 1441px) {
+
+    /* General Styling*/
+
+    /*Contact page*/
+
+
+    /*Footer*/
+
+}
