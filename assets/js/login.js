@@ -1,26 +1,32 @@
-// General Variables
-const closeLogin = document.getElementsByClassName('off-item');
-const finalLogin = closeLogin[1];
-const closeMeta = document.getElementsByClassName('on-item')
-const finalMeta = closeMeta[1];
-const confirm = document.getElementById('confirm-input');
-const loginText = document.getElementsByClassName('login-text');
-const finalText = loginText[2];
+// Global Variables
+const backToSleep = document.getElementsByClassName('off-item');
+const navBackOnline = backToSleep[0];
+const closeLoggedIn = document.getElementsByClassName('on-item')
+const openFiat = document.getElementById('fiat-swap'); // Global const extended to other .js
 
-// Login VALIDATION
+/**
+ * For User deep Validation, hide Crypto Swap & show Fiat Swap features
+ */
 
-function submitListener(event) { // Validation Function
+function loginListener(event) { // Validation Function
     event.preventDefault();
-    let userInput = document.getElementById('username-input').value.slice(0, 49); // user input
-    let passInput = document.getElementById('password-input').value.slice(0, 49); // user input
+    let userInput = document.getElementById('username-input').value.slice(0, 49); // limit user input
+    let passInput = document.getElementById('password-input').value.slice(0, 49); // limit user input
     let passwordClue = passInput.substring(4);
+    const confirm = document.getElementById('confirm-input');
 
     if (userInput === username) { // Username comparison
         if (passInput === password) { // Password comparison and action to Hide page and elements
-            finalLogin.style.display = "none";
-            finalMeta.style.display = "none";
-            finalText.style.display = "none";
             openFiat.style.display = "inline-block";
+            for (let backSleep of backToSleep) {
+                backSleep.style.display = "none";
+            }
+            if (navBackOnline.style.display === "none") {
+                navBackOnline.style.display = "inherit";
+            }
+            for (let closeRest of closeLoggedIn) {
+                closeRest.style.display = "none"
+            }
         } else if (passInput.length < 6) { // Error if pass is less tha 6 ch
             confirm.style.display = "inherit"
             confirm.innerHTML = `<p>The password <b><i>${passInput}</i></b> is less than 6 characters long!</p>`
@@ -35,10 +41,11 @@ function submitListener(event) { // Validation Function
         confirm.style.display = "inherit"
         confirm.innerHTML = `<p>The username <b><i>${userInput}</i></b> is wrong!</p>` // if wrong username
     }
-    cryptoSwitch.style.display = "none"; // Variable on switch.js
+    openCrypto.style.display = "none"; // Variable on switch.js
 }
 
+// Add event 'click' & 'touchend' listener to the Login form 'submit' button
 let loginForm = document.getElementById('my-login'); // call element properties
-loginForm.addEventListener('submit', submitListener); // add listener 'submit' and add function
+loginForm.addEventListener('submit', loginListener); // add listener 'submit' and add function
 
-loginForm.addEventListener('touchend', submitListener); // For Devices
+loginForm.addEventListener('touchend', loginListener); // For Devices

@@ -1,5 +1,7 @@
 // START of ChatGPT4 code for Metamask login
-// Define the connect() function to handle Metamask login
+/**
+ * Define the connect() function to handle Metamask login
+ */
 async function connect() {
   // Check if Metamask is installed in the user's browser
   if (typeof window.ethereum !== 'undefined') {
@@ -13,10 +15,16 @@ async function connect() {
       alert(`Logged in as ${currentAccount}`);
 
       // Author's owned code
-      finalLogin.style.display = "none"; // on login.js
-      finalMeta.style.display = "none"; // on login.js
-      finalText.style.display = "none"; // on login.js
-      cryptoSwitch.style.display = "inline-block"; // on switch.js
+      for (let backSleep of backToSleep) {
+        backSleep.style.display = "none";
+      }
+      if (navBackOnline.style.display === "none") {
+        navBackOnline.style.display = "inherit";
+    }
+      for (let closeRest of closeLoggedIn) {
+        closeRest.style.display = "none"
+      }
+      openCrypto.style.display = "inline-block"; // on switch.js
       openFiat.style.display = "none"; // on switch.js
     } catch (error) {
       // If an error occurs, display a custom error message in the console or on the webpage
@@ -64,6 +72,10 @@ function displayError(error) {
 let toCrypto = document.getElementsByClassName('to-crypto'); // for CRYPTO nav connection
 for (fiat = 0; fiat < toCrypto.length; fiat++) {
   toCrypto[fiat].addEventListener('click', (event) => {
+    event.preventDefault();
+    connect();
+  })
+  toCrypto[fiat].addEventListener('touchend', (event) => {
     event.preventDefault();
     connect();
   })
