@@ -13,8 +13,21 @@ async function connect() {
       // Get the current account from Metamask and display an alert message with the account address
       const currentAccount = await getCurrentAccount();
       alert(`Logged in as ${currentAccount}`);
-
-      // Author's owned code
+      
+      // START of Author's owned code
+      for (let i = 0; i < usersAccount.length; i++) {
+        limitFiat.children[1].innerHTML = `<li>${limits}</li>`;
+        limitCrypto.children[1].innerHTML = `<li>${limits}</li>`;
+        // load balances
+        fiatBalanceUSD = usersAccount[i].fiatUSD;
+        fiatBalanceEUR = usersAccount[i].fiatEUR;
+        fiatBalanceETH = usersAccount[i].cryptoETH;
+        fiatBalanceBTC = usersAccount[i].cryptoBTC;
+      }
+      balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${fiatBalanceUSD.toFixed(2)}$</li>
+      <li><b>EUR</b> = ${fiatBalanceEUR.toFixed(2)}€</li>`;
+      balanceCrypto.children[1].innerHTML = `<li><b>ETH</b> = ${fiatBalanceETH.toFixed(6)}$</li>
+      <li><b>BTC</b> = ${fiatBalanceBTC.toFixed(6)}€</li>`;
       for (let backSleep of backToSleep) {
         backSleep.style.display = "none";
       }
@@ -26,6 +39,8 @@ async function connect() {
       }
       openCrypto.style.display = "inline-block"; // on switch.js
       openFiat.style.display = "none"; // on switch.js
+
+      // END of Author's code
     } catch (error) {
       // If an error occurs, display a custom error message in the console or on the webpage
       displayError(error);

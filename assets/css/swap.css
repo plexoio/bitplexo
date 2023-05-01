@@ -19,11 +19,11 @@
 /* Fiat Swap*/
 
 #balance-fiat {
-    width: 70px;
+    width: 11vw;
 }
 
 #limit-fiat {
-    width: 70px;
+    width: 11vw;
 }
 
 .circle-swap {
@@ -84,7 +84,6 @@ select {
     background-color: white;
     border-radius: 15px;
     margin-top: 15px;
-    width: auto;
 }
 
 ul {
@@ -117,7 +116,7 @@ ul {
 /* Crypto Swap */
 
 #limit-crypto {
-    width: 70px;
+    width: 11vw;
 }
 
 #crypto-enter {
