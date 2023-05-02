@@ -127,7 +127,7 @@
 
     <!-- Start of Third Page / Fiat Swap-->
     <section id="fiat-swap">
-        <h2><span class="to-fiat">Fiat Swap</span></h2>
+        <h2><span class="to-fiat" title="Try to reconnect">Fiat Swap</span></h2>
         <!-- BALANCES-->
         <section id="balance-fiat">
             <h4>Balances</h4>
@@ -138,19 +138,19 @@
 
         <!-- TITLE and FAQ-->
         <section>
-            <h4 class="left-balance">Switch to <span class="switch-crypto">Crypto</span></h4>
+            <h4 class="left-balance">Switch to <span class="switch-crypto" title="Switch to Crypto Swap">Crypto</span></h4>
             <div class="faq">
-                <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
+                <a href="contact.html"><i class="fa-regular fa-circle-question" title="Go to Contact Page"></i></a>
             </div>
 
             <!-- Swap FORM-->
-            <form class="form" action="" method="post">
+            <form class="form" action="https://formdump.codeinstitute.net/" method="post">
 
                 <!-- Swap FROM-->
                 <div class="block">
                     <div class="float-left">
                         <label for="fiat-from">Fiat</label>
-                        <select name="fiat-from" id="fiat-from">
+                        <select name="fiat-from" id="fiat-from" required>
                             <option value="">Select</option>
                             <option value="USD">USD</option>
                             <option value="EUR">EUR</option>
@@ -159,13 +159,13 @@
 
                     <!-- CIRCLE Swap LOGO-->
                     <div>
-                        <i class="circle-swap fa-solid fa-right-left"></i>
+                        <i class="circle-swap fa-solid fa-right-left" title="Clear Inputs"></i>
                     </div>
 
                     <!-- Swap TO -->
                     <div class="float-right">
                         <label for="fiat-to">Fiat</label>
-                        <select name="fiat-to" id="fiat-to">
+                        <select name="fiat-to" id="fiat-to" required>
                             <option value="">Select</option>
                             <option value="USD">USD</option>
                             <option value="EUR">EUR</option>
@@ -178,13 +178,13 @@
                     <!-- Amount SEND -->
                     <div class="float-left">
                         <label for="fiat-enter">Before</label>
-                        <input id="fiat-enter" type="text">
+                        <input id="fiat-enter" type="text" min="0" required>
                     </div>
 
                     <!-- Amount RECEIVE -->
                     <div class="float-right">
                         <label for="fiat-receive">After</label>
-                        <input id="fiat-receive" type="text" readonly>
+                        <input id="fiat-receive" name="fiat-receive" type="text" readonly min="0">
                     </div>
                 </div>
 
@@ -206,7 +206,7 @@
 
     <!-- Start of Forth Page / Crypto Swap-->
     <section id="crypto-swap">
-        <h2><span class="to-crypto">Crypto Swap</span></h2>
+        <h2><span class="to-crypto" title="Try to reconnect">Crypto Swap</span></h2>
         <!-- BALANCES-->
         <section id="balance-crypto">
             <h4>Balances</h4>
@@ -217,19 +217,19 @@
 
         <!-- TITLE and FAQ-->
         <section>
-            <h4 class="left-balance">Switch to <span class="switch-fiat">Fiat</span></h4>
+            <h4 class="left-balance">Switch to <span class="switch-fiat" title="Switch to Fiat Swap">Fiat</span></h4>
             <div class="faq">
-                <a href="contact.html"><i class="fa-regular fa-circle-question"></i></a>
+                <a href="contact.html"><i class="fa-regular fa-circle-question" title="Go to Contact Page"></i></a>
             </div>
 
             <!-- Swap FORM-->
-            <form class="form" action="" method="post">
+            <form class="form" action="https://formdump.codeinstitute.net/" method="post">
 
                 <!-- Swap FROM-->
                 <div class="block">
                     <div class="float-left">
                         <label for="crypto-from">Crypto</label>
-                        <select name="crypto-from" id="crypto-from">
+                        <select name="crypto-from" id="crypto-from" required>
                             <option value="">Select</option>
                             <option value="eth">ETH</option>
                             <option value="btc">BTC</option>
@@ -238,13 +238,13 @@
 
                     <!-- CIRCLE Swap LOGO-->
                     <div>
-                        <i class="circle-swap fa-solid fa-right-left"></i>
+                        <i class="circle-swap fa-solid fa-right-left" title="Clear Inputs" ></i>
                     </div>
 
                     <!-- Swap TO -->
                     <div class="float-right">
                         <label for="crypto-to">Crypto</label>
-                        <select name="crypto-to" id="crypto-to">
+                        <select name="crypto-to" id="crypto-to" required>
                             <option value="">Select</option>
                             <option value="eth">ETH</option>
                             <option value="btc">BTC</option>
@@ -257,13 +257,13 @@
                     <!-- Amount SEND -->
                     <div class="float-left">
                         <label for="crypto-enter">Before</label>
-                        <input id="crypto-enter" type="text">
+                        <input id="crypto-enter" type="text" min="0" required>
                     </div>
 
                     <!-- Amount RECEIVE -->
                     <div class="float-right">
                         <label for="crypto-receive">After</label>
-                        <input id="crypto-receive" type="text" readonly>
+                        <input id="crypto-receive" type="text" readonly min="0">
                     </div>
                 </div>
 

@@ -7,6 +7,9 @@ const openFiat = document.getElementById('fiat-swap'); // Global const extended 
 /**
  * For User deep Validation, hide Crypto Swap & show Fiat Swap features
  */
+
+let fiatBalanceUSD;
+let fiatBalanceEUR;
 function loginListener(event) { // Validation Function
     event.preventDefault();
     let userInput = document.getElementById('username-input').value.slice(0, 49); // limit user input
@@ -24,8 +27,8 @@ function loginListener(event) { // Validation Function
                 // Balances and Limits from users.js
                 limitFiat.children[1].innerHTML = `<li>${limits}</li>`;
                 limitCrypto.children[1].innerHTML = `<li>${limits}</li>`;
-                let fiatBalanceUSD = usersAccount[i].fiatUSD;
-                let fiatBalanceEUR = usersAccount[i].fiatEUR;
+                fiatBalanceUSD = usersAccount[i].fiatUSD;
+                fiatBalanceEUR = usersAccount[i].fiatEUR;
                 let fiatBalanceETH = usersAccount[i].cryptoETH;
                 let fiatBalanceBTC = usersAccount[i].cryptoBTC;
                 balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${fiatBalanceUSD.toFixed(2)}$</li>
