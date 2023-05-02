@@ -9,8 +9,7 @@ let circleSwapOne = circleSwap[0];
 
 // Currency pairs object as a 'const variable'
 const currencyPairs = {
-    USD: 'EUR',
-    EUR: 'USD',
+    USD: 'EUR'
 }
 
 // start of PAIRs SELECTION
@@ -54,11 +53,7 @@ function rateFiatCalc(event) {
         if (calcMyNumber >= 0) {
             eurRateFiatCalc(calcMyNumber);
         }
-    } else if (selectedCurrency === 'EUR') {
-        if (calcMyNumber >= 0) {
-            usdRateFiatCalc(calcMyNumber);
-        }
-    }
+    } 
 }
 
 /**
@@ -77,19 +72,6 @@ function eurRateFiatCalc(amount) {
         }
     }
 }
-let finalUSD;
-function usdRateFiatCalc(amount) {
-    let selectedToUSD = selectToFiat.value;
-    if (selectedToUSD === 'USD') {
-        let receiveMyNumberUSD = amount + (amount * 8.75 / 100);
-        receiveFiat.value = receiveMyNumberUSD.toFixed(3);
-        finalUSD = receiveFiat.value;
-        if (finalUSD.value < 0) {
-            finalUSD.value = 0;
-        }
-    }
-}
-
 enterFiat.addEventListener('input', rateFiatCalc);
 
 // end of RATE CALCULATION
@@ -101,34 +83,35 @@ function balanceUSD(value) {
 }
 
 /**
- * 
+ * Listen to 'Swap' button, then after swap 
+ * it will update USD & EUR balances repectively
  */
 
 function updateNumbersFiat(event) {
     event.preventDefault();
 
-    let totalConvertedAmountUSD = parseInt(calcMyNumber);
+    // From USD to EUR
+
+    //USD
+    let totalConvertedAmountUSD = parseFloat(calcMyNumber);
     totalConvertedUSD += totalConvertedAmountUSD;
     let newBalanceUSD = usersAccount[0].fiatUSD - totalConvertedUSD;
-
-    let totalConvertedAmountEUR = parseInt(finalEUR);
+    //EUR
+    let totalConvertedAmountEUR = parseFloat(finalEUR);
     convertedEUR += totalConvertedAmountEUR;
+    //Balance
     let newBalanceEUR = usersAccount[0].fiatEUR + convertedEUR;
 
-    //NEw
+    //From EUR to USD
 
-    let totalConvertedAmountEUR2 = parseInt(calcMyNumber);
-    totalConvertedEUR += totalConvertedAmountEUR2;
-    let newBalanceEUR2 = usersAccount[0].fiatEUR - totalConvertedEUR;
-
-
-    if (selectedCurrency === 'USD'){
-        balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceUSD}$</li>
-        <li><b>EUR</b> = ${newBalanceEUR}€</li>`
-    }else {
-        balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceEUR2}$</li>
-        <li><b>EUR</b> = ${newBalanceEUR2}€</li>`
-    }
+    if (selectedCurrency === 'USD') {
+        if (newBalanceUSD >= 0 && newBalanceEUR >= 0) {
+            balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceUSD.toFixed(3)}$</li>
+        <li><b>EUR</b> = ${newBalanceEUR.toFixed(3)}€</li>`
+        }else {
+            alert('No balance!')
+        }
+    } 
 }
 
 swapFiat.addEventListener('submit', updateNumbersFiat);
