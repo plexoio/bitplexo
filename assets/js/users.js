@@ -26,7 +26,7 @@ let usersAccount = [
 
 // Temporary storage For swapping, to increment or decrement
 let totalConvertedUSD = 0;
-let convertedEUR = 0;
-
-let totalConvertedEUR = 0;
 let convertedUSD = 0;
+
+let totalConvertedETH = 0;
+let convertedBTC = 0;

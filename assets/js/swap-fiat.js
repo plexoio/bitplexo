@@ -8,7 +8,7 @@ let circleSwap = document.getElementsByClassName('circle-swap');
 let circleSwapOne = circleSwap[0];
 
 // Currency pairs object as a 'const variable'
-const currencyPairs = {
+const currencyFiatPairs = {
     USD: 'EUR'
 }
 
@@ -16,24 +16,24 @@ const currencyPairs = {
 
 /**
  * Listens to the currency selection and execute pairs, 
- * it follows the const of 'currencyPairs' mapping the key-value pairs
+ * it follows the const of 'currencyFiatPairs' mapping the key-value pairs
  * and acting accordingly.
  */
-function currencyPairsFiat(event) {
+function currencyFiatPairsFiat(event) {
     let selectedKeyCurrencyFrom = selectFromFiat.value;
     let selectedKeyCurrencyto = selectToFiat.value;
     enterFiat.value = 0;
     receiveFiat.value = 0;
 
-    if (currencyPairs[selectedKeyCurrencyFrom]) {
-        selectToFiat.value = currencyPairs[selectedKeyCurrencyFrom];
-    } else if (currencyPairs[selectedKeyCurrencyto]) {
-        selectFromFiat.value = currencyPairs[selectedKeyCurrencyto];
+    if (currencyFiatPairs[selectedKeyCurrencyFrom]) {
+        selectToFiat.value = currencyFiatPairs[selectedKeyCurrencyFrom];
+    } else if (currencyFiatPairs[selectedKeyCurrencyto]) {
+        selectFromFiat.value = currencyFiatPairs[selectedKeyCurrencyto];
     }
 }
-selectFromFiat.addEventListener('change', currencyPairsFiat);
-selectToFiat.addEventListener('change', currencyPairsFiat);
-circleSwapOne.addEventListener('click', currencyPairsFiat);
+selectFromFiat.addEventListener('change', currencyFiatPairsFiat);
+selectToFiat.addEventListener('change', currencyFiatPairsFiat);
+circleSwapOne.addEventListener('click', currencyFiatPairsFiat);
 
 // end of PAIRs SELECTION
 
@@ -95,12 +95,12 @@ function updateNumbersFiat(event) {
     //USD
     let totalConvertedAmountUSD = parseFloat(calcMyNumber);
     totalConvertedUSD += totalConvertedAmountUSD;
-    let newBalanceUSD = usersAccount[0].fiatUSD - totalConvertedUSD;
+    let newBalanceUSD = usersAccount[0].fiatUSD - totalConvertedUSD; // Balance
+
     //EUR
     let totalConvertedAmountEUR = parseFloat(finalEUR);
     convertedEUR += totalConvertedAmountEUR;
-    //Balance
-    let newBalanceEUR = usersAccount[0].fiatEUR + convertedEUR;
+    let newBalanceEUR = usersAccount[0].fiatEUR + convertedEUR; // Balance
 
     //From EUR to USD
 
