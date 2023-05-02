@@ -33,14 +33,52 @@
 
     /* Login form*/
 
-    #to-left>input {
-        border: none;
-        width: 100%;
+    #h2-login {
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    #h2-login>h2 {
+        font-weight: 400;
+    }
+
+    .inline-block {
+        width: 100vw;
     }
 
     #login-form {
-        width: 70vw;
-        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    #login-form>h2 {
+        line-height: 30px;
+        margin-left: 25px;
+    }
+
+    .faq {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    #to-left>input {
+        width: 100%;
+    }
+
+    #to-left>label {
+        margin-bottom: -10px;
+        display: block;
+        margin-top: 10px;
+        color: #3498db;
+    }
+
+    #username {
+        margin-top: 20px;
+    }
+
+    #password {
+        margin-top: 20px;
     }
 
 
@@ -142,12 +180,21 @@
         margin-top: 20px;
     }
 
+    .media-small {
+        margin-top: 10vw;
+    }
+
     /*Login page*/
 
     #h2-login {
         margin-top: 10vw;
         margin-bottom: 5vw;
     }
+
+    #h2-login>h2 {
+        font-weight: 400;
+    }
+
     .inline-block {
         width: 100vw;
     }
@@ -157,29 +204,118 @@
         margin-right: 20px;
 
     }
+
     #login-form>h2 {
         line-height: 30px;
         margin-left: 25px;
     }
+
     .faq {
         line-height: 30px;
         font-size: 25px;
     }
+
     #to-left>input {
         width: 100%;
     }
+
     #to-left>label {
         margin-bottom: -10px;
         display: block;
         margin-top: 10px;
+        color: #3498db;
     }
+
     #username {
         margin-top: 20px;
     }
+
     #password {
         margin-top: 20px;
     }
-    /*Swap general styling*/
+
+    /* Fiat Swap page*/
+
+    #fiat-swap {
+        display: none;
+        margin-top: -100px;
+    }
+
+    #fiat-swap section {
+        width: auto;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .float-right {
+        float: none;
+    }
+
+    .float-right>label {
+        margin-top: 10px;
+    }
+
+    .float-left {
+        float: none;
+    }
+
+    .block>div {
+        display: inline-block;
+    }
+
+    .fa-solid, .fas {
+        margin: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #limit-fiat {
+        margin-bottom: 150px;
+    }
+
+
+    /* Crypto Swap page*/
+
+    #crypto-swap {
+        display: none;
+        margin-top: -100px;
+    }
+
+    #crypto-swap section {
+        width: auto;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #limit-crypto {
+        margin-bottom: 150px;
+    }
+
+    /* Footer and General Styling*/
+    #elevate {
+        padding-bottom: 150px;
+    }
+
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+
+    #crypto-widget {
+        display: none;
+    }
+
+    #copyright {
+        float: none;
+        padding-right: 5%;
+    }
+
+    #social-media {
+        float: none;
+        padding-left: 0;
+    }
 
     /* Footer */
 
@@ -195,8 +331,8 @@
     #crypto-widget {
         display: block;
         padding-left: 20px;
-    padding-right: 20px;
-    width:90vw;
+        padding-right: 20px;
+        width: 90vw;
     }
 
     #copyright {
