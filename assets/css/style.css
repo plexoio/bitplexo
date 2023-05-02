@@ -20,7 +20,6 @@
     text-decoration: none;
     color: #3a3a3a;
     font-family: 'Roboto', Poppins, sans-serif;
-    user-select: none;
 }
 
 body {
@@ -63,7 +62,7 @@ input {
     margin-left: 10px;
     font-size: 18px;
     border-radius: 5px;
-    user-select:all;
+    user-select: all;
 }
 
 label {
