@@ -6,6 +6,7 @@ let selectFromFiat = document.getElementById('fiat-from'); // Select from
 let selectToFiat = document.getElementById('fiat-to'); // Select to
 let circleSwap = document.getElementsByClassName('circle-swap');
 let circleSwapOne = circleSwap[0];
+let circleSwapTwo = circleSwap[1];
 
 // Currency pairs object as a 'const variable'
 const currencyFiatPairs = {
@@ -34,6 +35,7 @@ function currencyFiatPairsFiat(event) {
 selectFromFiat.addEventListener('change', currencyFiatPairsFiat);
 selectToFiat.addEventListener('change', currencyFiatPairsFiat);
 circleSwapOne.addEventListener('click', currencyFiatPairsFiat);
+circleSwapOne.addEventListener('touchend', currencyFiatPairsFiat);
 
 // end of PAIRs SELECTION
 
@@ -87,7 +89,7 @@ function balanceUSD(value) {
  * it will update USD & EUR balances repectively
  */
 
-function updateNumbersFiat(event) {
+ function updateNumbersFiat(event) {
     event.preventDefault();
 
     // From USD to EUR
@@ -107,13 +109,14 @@ function updateNumbersFiat(event) {
     if (selectedCurrency === 'USD') {
         if (newBalanceUSD >= 0 && newBalanceEUR >= 0) {
             balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceUSD.toFixed(3)}$</li>
-        <li><b>EUR</b> = ${newBalanceEUR.toFixed(3)}€</li>`
-        }else {
+        <li><b>EUR</b> = ${newBalanceEUR.toFixed(3)}€</li>`;
+        } else {
             alert('No balance!')
         }
     } 
 }
 
 swapFiat.addEventListener('submit', updateNumbersFiat);
+
 
 // end of BALANCE UPDATE
