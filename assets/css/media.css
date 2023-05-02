@@ -13,7 +13,7 @@
     }
 
     #enter-page {
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     /* Navbar*/
@@ -133,10 +133,82 @@
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 
-    /* General Styling*/
+    /* Welcome Page*/
+    .welcome h2 {
+        font-size: 40px;
+    }
 
+    #enter-page {
+        margin-top: 20px;
+    }
+
+    /*Login page*/
+
+    #h2-login {
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+    .inline-block {
+        width: 100vw;
+    }
+
+    #login-form {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    #login-form>h2 {
+        line-height: 30px;
+        margin-left: 25px;
+    }
+    .faq {
+        line-height: 30px;
+        font-size: 25px;
+    }
+    #to-left>input {
+        width: 100%;
+    }
+    #to-left>label {
+        margin-bottom: -10px;
+        display: block;
+        margin-top: 10px;
+    }
+    #username {
+        margin-top: 20px;
+    }
+    #password {
+        margin-top: 20px;
+    }
     /*Swap general styling*/
 
+    /* Footer */
+
+    #elevate {
+        padding-bottom: 150px;
+    }
+
+    .footer {
+        height: 120px;
+        width: 100vw;
+    }
+
+    #crypto-widget {
+        display: block;
+        padding-left: 20px;
+    padding-right: 20px;
+    width:90vw;
+    }
+
+    #copyright {
+        float: none;
+        padding-right: 5%;
+        display: block;
+    }
+
+    #social-media {
+        float: none;
+        padding-left: 0;
+    }
 
 }
 
