@@ -20,6 +20,7 @@
     text-decoration: none;
     color: #3a3a3a;
     font-family: 'Roboto', Poppins, sans-serif;
+    user-select: none;
 }
 
 body {
