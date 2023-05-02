@@ -72,5 +72,3 @@ function loginListener(event) { // Validation Function
 // Add event 'click' & 'touchend' listener to the Login form 'submit' button
 let loginForm = document.getElementById('my-login'); // call element properties
 loginForm.addEventListener('submit', loginListener); // add listener 'submit' and add function
-
-loginForm.addEventListener('touchend', loginListener); // For Devices

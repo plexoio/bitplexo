@@ -35,7 +35,7 @@
     transition: 0.3s;
 }
 
-.circle-swap:hover {
+.circle-swap:active:hover {
     border: 1px solid #3a3a3a;
     color: #3a3a3a;
     transition: 0.3s;
@@ -107,7 +107,7 @@ ul {
     display: inline-block;
 }
 
-.swap:hover {
+.swap:active:hover {
     background-color: #3498db;
     color: white;
     transition: 0.3s;
