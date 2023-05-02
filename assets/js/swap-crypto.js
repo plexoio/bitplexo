@@ -102,7 +102,7 @@ function updateNumbersCrypto(event) {
             balanceCrypto.children[1].innerHTML = `<li><b>ETH</b> = ${newBalanceETH.toFixed(3)}</li>
         <li><b>BTC</b> = ${newBalanceBTC.toFixed(3)}</li>`
         } else {
-            alert('No balance!')
+            alert('Not enough balance, please refresh the page!')
         }
     }
 }

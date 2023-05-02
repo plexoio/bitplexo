@@ -109,7 +109,7 @@ function updateNumbersFiat(event) {
             balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceUSD.toFixed(3)}$</li>
         <li><b>EUR</b> = ${newBalanceEUR.toFixed(3)}€</li>`;
         } else {
-            alert('No balance!')
+            alert('Not enough balance, please refresh the page!!')
         }
     }
 }

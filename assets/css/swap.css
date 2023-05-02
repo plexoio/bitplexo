@@ -35,7 +35,7 @@
     transition: 0.3s;
 }
 
-.circle-swap:active:hover {
+.circle-swap:hover {
     border: 1px solid #3a3a3a;
     color: #3a3a3a;
     transition: 0.3s;
@@ -46,6 +46,7 @@ select {
     border: 1px solid #3498db;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 .float-left>label {
@@ -107,7 +108,7 @@ ul {
     display: inline-block;
 }
 
-.swap:active:hover {
+.swap:hover {
     background-color: #3498db;
     color: white;
     transition: 0.3s;

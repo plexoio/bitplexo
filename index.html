@@ -38,9 +38,11 @@
     <!-- First Page / WELCOME -->
     <div class="welcome">
         <!-- Logo -->
-        <section>
-            <a href="index.html"><div class="bitlogo"></div></a>
-        </section>
+        <div>
+            <a href="index.html">
+                <div class="bitlogo"></div>
+            </a>
+        </div>
 
         <!-- Description and Enter Button-->
         <section class="media-small">
@@ -100,7 +102,7 @@
                     <div id="text-center">
                         <div id="confirm-input"></div>
                         <label for="submit-login"></label>
-                        <input type="submit" class="cta-login" value="Login">
+                        <input id="submit-login" type="submit" class="cta-login" value="Login">
                     </div>
                 </form>
             </section>
@@ -138,7 +140,8 @@
 
         <!-- TITLE and FAQ-->
         <section>
-            <h4 class="left-balance">Switch to <span class="switch-crypto" title="Switch to Crypto Swap">Crypto</span></h4>
+            <h4 class="left-balance">Switch to <span class="switch-crypto" title="Switch to Crypto Swap">Crypto</span>
+            </h4>
             <div class="faq">
                 <a href="contact.html"><i class="fa-regular fa-circle-question" title="Go to Contact Page"></i></a>
             </div>
@@ -176,13 +179,13 @@
                     <!-- Amount SEND -->
                     <div class="float-left">
                         <label for="fiat-enter">Before</label>
-                        <input id="fiat-enter" type="text" min="0" required>
+                        <input id="fiat-enter" type="text" required>
                     </div>
 
                     <!-- Amount RECEIVE -->
                     <div class="float-right">
                         <label for="fiat-receive">After</label>
-                        <input id="fiat-receive" name="fiat-receive" type="text" readonly min="0">
+                        <input id="fiat-receive" name="fiat-receive" type="text" readonly>
                     </div>
                 </div>
 
@@ -235,7 +238,7 @@
 
                     <!-- CIRCLE Swap LOGO-->
                     <div>
-                        <i id="circle-crypto" class="circle-swap fa-solid fa-right-left" title="Clear Inputs" ></i>
+                        <i id="circle-crypto" class="circle-swap fa-solid fa-right-left" title="Clear Inputs"></i>
                     </div>
 
                     <!-- Swap TO -->
@@ -253,13 +256,13 @@
                     <!-- Amount SEND -->
                     <div class="float-left">
                         <label for="crypto-enter">Before</label>
-                        <input id="crypto-enter" type="text" min="0" required>
+                        <input id="crypto-enter" type="text" required>
                     </div>
 
                     <!-- Amount RECEIVE -->
                     <div class="float-right">
                         <label for="crypto-receive">After</label>
-                        <input id="crypto-receive" type="text" readonly min="0">
+                        <input id="crypto-receive" type="text" readonly>
                     </div>
                 </div>
 
@@ -273,7 +276,7 @@
         <section id="limit-crypto">
             <h4>Limits</h4>
             <ul>
-                
+
             </ul>
         </section>
     </section>
@@ -283,7 +286,7 @@
     <footer class="footer">
 
         <!-- Social Media buttons-->
-        <div id="social-media" aria-label="Social Media buttons">
+        <div id="social-media">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer nofollow"><i
                     class="fa-brands fa-square-facebook"></i></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer nofollow"><i

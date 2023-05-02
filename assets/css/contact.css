@@ -1,0 +1,36 @@
+
+.contact-section {
+    width: 98vw;
+    padding-top: 50px;
+}
+
+.my-contact-form {
+    background-color: white;
+    border: 1px solid #3498db;
+    padding: 20px;
+    border-radius: 15px;
+    margin:0% 38% 10% 38%;
+}
+
+form> div > label {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+}
+
+textarea {
+    border: 1px solid #3498db;
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+}
