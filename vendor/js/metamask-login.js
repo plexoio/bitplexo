@@ -13,7 +13,7 @@ async function connect() {
       // Get the current account from Metamask and display an alert message with the account address
       const currentAccount = await getCurrentAccount();
       alert(`Logged in as ${currentAccount}`);
-      
+
       // START of Author's owned code
       for (let i = 0; i < usersAccount.length; i++) {
         limitFiat.children[1].innerHTML = `<li>${limits}</li>`;
@@ -33,7 +33,7 @@ async function connect() {
       }
       if (navBackOnline.style.display === "none") {
         navBackOnline.style.display = "inherit";
-    }
+      }
       for (let closeRest of closeLoggedIn) {
         closeRest.style.display = "none"
       }

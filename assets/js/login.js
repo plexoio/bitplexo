@@ -37,7 +37,7 @@ function loginListener(event) { // Validation Function
                 <li><b>EUR</b> = ${fiatBalanceEUR.toFixed(2)}€</li>`;
                 balanceCrypto.children[1].innerHTML = `<li><b>ETH</b> = ${fiatBalanceETH.toFixed(6)}$</li>
                 <li><b>BTC</b> = ${fiatBalanceBTC.toFixed(6)}€</li>`;
-                
+
                 // Necessary Loops to hide and show features
                 for (let backSleep of backToSleep) {
                     backSleep.style.display = "none";

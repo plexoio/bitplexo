@@ -35,6 +35,7 @@ function currencyCryptoPairsCrypto(event) {
 selectFromCrypto.addEventListener('change', currencyCryptoPairsCrypto);
 selectToCrypto.addEventListener('change', currencyCryptoPairsCrypto);
 circleCrypto.addEventListener('click', currencyCryptoPairsCrypto);
+circleCrypto.addEventListener('touchend', currencyCryptoPairsCrypto);
 
 // end of PAIRs SELECTION
 
@@ -54,13 +55,12 @@ function rateCryptoCalc(event) {
         if (calcMyNumberCrypto >= 0) {
             ETHRateCryptoCalc(calcMyNumberCrypto);
         }
-    } 
+    }
 }
 
 /**
- * Targeted from RateCryptoCalc for ETH-BTC rate calculation
+ * Targeted from RateCryptoCalc for BTC-ETH rate calculation
  */
-
 let finalETH;
 function ETHRateCryptoCalc(amount) {
     let selectedToETH = selectToCrypto.value;
@@ -79,34 +79,32 @@ enterCrypto.addEventListener('input', rateCryptoCalc);
 
 /**
  * Listen to 'Swap' button, then after swap 
- * it will update ETH & BTC balances repectively
+ * it will update BTC & ETH balances repectively
  */
 
 function updateNumbersCrypto(event) {
     event.preventDefault();
 
-    // From ETH to BTC
+    // From BTC to ETH
 
-    //ETH
+    //BTC
     let totalConvertedAmountBTC = parseFloat(calcMyNumberCrypto);
     totalConvertedBTC += totalConvertedAmountBTC;
     let newBalanceBTC = usersAccount[0].cryptoBTC - totalConvertedBTC; // Balance
 
-    //BTC
+    //ETH
     let totalConvertedAmountETH = parseFloat(finalETH);
     convertedETH += totalConvertedAmountETH;
     let newBalanceETH = usersAccount[0].cryptoETH + convertedETH; // Balance
-
-    //From BTC to ETH
 
     if (selectedCurrencyCrypto === 'BTC') {
         if (newBalanceBTC >= 0 && newBalanceETH >= 0) {
             balanceCrypto.children[1].innerHTML = `<li><b>ETH</b> = ${newBalanceETH.toFixed(3)}</li>
         <li><b>BTC</b> = ${newBalanceBTC.toFixed(3)}</li>`
-        }else {
+        } else {
             alert('No balance!')
         }
-    } 
+    }
 }
 
 swapCrypto.addEventListener('submit', updateNumbersCrypto);

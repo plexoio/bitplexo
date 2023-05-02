@@ -4,9 +4,7 @@ let enterFiat = document.getElementById('fiat-enter'); // Enter amount
 let receiveFiat = document.getElementById('fiat-receive'); // Receive amount
 let selectFromFiat = document.getElementById('fiat-from'); // Select from
 let selectToFiat = document.getElementById('fiat-to'); // Select to
-let circleSwap = document.getElementsByClassName('circle-swap');
-let circleSwapOne = circleSwap[0];
-let circleSwapTwo = circleSwap[1];
+let circleFiat = document.getElementById('circle-fiat');
 
 // Currency pairs object as a 'const variable'
 const currencyFiatPairs = {
@@ -34,8 +32,8 @@ function currencyFiatPairsFiat(event) {
 }
 selectFromFiat.addEventListener('change', currencyFiatPairsFiat);
 selectToFiat.addEventListener('change', currencyFiatPairsFiat);
-circleSwapOne.addEventListener('click', currencyFiatPairsFiat);
-circleSwapOne.addEventListener('touchend', currencyFiatPairsFiat);
+circleFiat.addEventListener('click', currencyFiatPairsFiat);
+circleFiat.addEventListener('touchend', currencyFiatPairsFiat);
 
 // end of PAIRs SELECTION
 
@@ -55,7 +53,7 @@ function rateFiatCalc(event) {
         if (calcMyNumber >= 0) {
             eurRateFiatCalc(calcMyNumber);
         }
-    } 
+    }
 }
 
 /**
@@ -89,7 +87,7 @@ function balanceUSD(value) {
  * it will update USD & EUR balances repectively
  */
 
- function updateNumbersFiat(event) {
+function updateNumbersFiat(event) {
     event.preventDefault();
 
     // From USD to EUR
@@ -113,7 +111,7 @@ function balanceUSD(value) {
         } else {
             alert('No balance!')
         }
-    } 
+    }
 }
 
 swapFiat.addEventListener('submit', updateNumbersFiat);
