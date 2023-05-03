@@ -82,8 +82,8 @@ Please note that this project is not available for public deployment; it is inte
       - [Responsiveness](#responsiveness)
       - [Security](#security)
   - [Development Process <a name="development"></a> | #](#development-process---)
-  - [Deployment Process <a name="deployment"></a> | #](#deployment-process---)
   - [Future Implementations <a name="future"></a> | #](#future-implementations---)
+  - [Deployment Process <a name="deployment"></a> | #](#deployment-process---)
   - [Credits <a name="credits"></a> | #](#credits---)
   - [Authors](#authors)
 
@@ -565,6 +565,24 @@ In future iterations, we plan to develop the `index` and `contact` pages further
 
 We are satisfied with our first iteration of Bitplexo, as users learn about this emerging technology and the financial institution informs them about upcoming developments. Radical changes are not always positive, so building and deploying this project was an excellent idea.
 
+## Future Implementations <a name="future"></a> | [#](#index)
+
+We had a tight timeframe of only three weeks to build this MVP project using heavily Javascript, HTML, and CSS. We planned different features for this iteration, and we were able to accomplish the most important ones. However, there are several features that we were unable to include in this iteration, and we plan to include them in future iterations:
+
+- `Welcome Page:` A feature to remember when users last clicked.
+
+- `Fiat & Crypto Swap:` More interactivity with Javascript and connection to a backend server to handle database requests.
+
+- `Contact page:` A more sophisticated page with Javascript interactions, DB connection, and style as seen on the wireframe.
+
+- `Buy & Sell button:` We did not include this feature as expected and mentioned before. A proper feature should be added accordingly, along with backend development.
+
+- `Captcha verification:` It's necessary to avoid spam. We plan to include it on the contact page and login page, and possibly on the welcome page as well.
+
+- `Better SSL badge:` We planned to include a better SSL badge to demonstrate to users that they are not on a phishing website. Unfortunately, we were unable to include it in this iteration due to time constraints.
+
+We look forward to including these features and more in future iterations of Bitplexo.
+
 ## Deployment Process <a name="deployment"></a> | [#](#index)
 
 We used Visual Studio, Git Bash, and GitHub for coding and version control, enabling us to deploy our product quickly once it was completed.
@@ -589,9 +607,6 @@ We used Visual Studio, Git Bash, and GitHub for coding and version control, enab
 8. On top of that section, you will see the link to your GitHub Pages.
 
 In this way, we were able to deploy our project successfully with no major issues. For more information, please refer to the other sections and subsections of this README.md file.
-
-## Future Implementations <a name="future"></a> | [#](#index)
-
 
 <hr>
 
