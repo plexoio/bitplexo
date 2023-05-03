@@ -28,7 +28,7 @@ Please note that this project is not available for public deployment; it is inte
 **Preview Link:** [Bitplexo](https://plexoio.github.io/bitplexo/)
 **Access**
 - `username: 'admin'`
-  `password: 'admin123.`
+  `password: 'admin123.'`
 
 - `username: 'carol'` 
   `password: 'password123'`
