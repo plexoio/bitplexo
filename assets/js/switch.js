@@ -4,8 +4,6 @@ function innerSwitching(event) {
     if (openFiat.style.display === "inline-block") { // If fiat is ON
         openFiat.style.display = "none";
         openCrypto.style.display = "inline-block";
-        let fiatBalanceUSD = usersAccount[i].fiatUSD;
-        let fiatBalanceEUR = usersAccount[i].fiatEUR;
         balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${fiatBalanceUSD.toFixed(2)}$</li>
         <li><b>EUR</b> = ${fiatBalanceEUR.toFixed(2)}€</li>`;
     } else if (openCrypto.style.display === "inline-block") {     // If crypto is ON

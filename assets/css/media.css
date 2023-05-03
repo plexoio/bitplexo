@@ -14,6 +14,7 @@
 
     #enter-page {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     /* Navbar*/
@@ -182,15 +183,20 @@
 
     /* Welcome Page*/
     .welcome h2 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     #enter-page {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .media-small {
         margin-top: 10vw;
+    }
+
+    ul {
+        text-align: center;
     }
 
     /*Login page*/
@@ -205,7 +211,7 @@
     }
 
     .inline-block {
-        width: 100vw;
+        width: 80vw;
     }
 
     #login-form {
@@ -233,6 +239,7 @@
         display: block;
         margin-top: 10px;
         color: #3498db;
+        
     }
 
     #username {
@@ -247,11 +254,11 @@
 
     #fiat-swap {
         display: none;
-        margin-top: -100px;
+        margin-top: -120px;
     }
 
     #fiat-swap section {
-        width: auto;
+        width: 70%;
         padding: 20px;
         margin-left: 10px;
         margin-right: 10px;
@@ -287,11 +294,11 @@
 
     #crypto-swap {
         display: none;
-        margin-top: -100px;
+        margin-top: -120px;
     }
 
     #crypto-swap section {
-        width: auto;
+        width: 70%;
         padding: 20px;
         margin-left: 10px;
         margin-right: 10px;
@@ -360,9 +367,185 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-    /*General Styling*/
+    /* Welcome Page*/
+    .welcome h2 {
+        font-size: 70px;
+    }
 
-    /*Swap  general styling*/
+    #enter-page {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .media-small {
+        padding-top: 0vw;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    /*Login page*/
+
+    #h2-login {
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    #h2-login>h2 {
+        font-weight: 400;
+    }
+
+    .inline-block {
+        width: 80vw;
+    }
+
+    #login-form {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    #login-form>h2 {
+        line-height: 30px;
+        margin-left: 25px;
+    }
+
+    .faq {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    #to-left>input {
+        width: 100%;
+    }
+
+    #to-left>label {
+        margin-bottom: -10px;
+        display: block;
+        margin-top: 10px;
+        color: #3498db;
+    }
+
+    #username {
+        margin-top: 20px;
+    }
+
+    #password {
+        margin-top: 20px;
+    }
+
+    /* Fiat Swap page*/
+
+    #fiat-swap {
+        display: none;
+        margin-top: -130px;
+    }
+
+    #fiat-swap section {
+        width: 70%;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .float-right {
+        float: none;
+    }
+
+    .float-right>label {
+        margin-top: 10px;
+    }
+
+    .float-left {
+        float: none;
+    }
+
+    .block>div {
+        display: inline-block;
+    }
+
+    .fa-solid, .fas {
+        margin: 30px;
+        padding: 10px;
+    }
+
+    #limit-fiat {
+        margin-bottom: 150px;
+    }
+
+
+    /* Crypto Swap page*/
+
+    #crypto-swap {
+        display: none;
+        margin-top: -130px;
+    }
+
+    #crypto-swap section {
+        width: 70%;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #limit-crypto {
+        margin-bottom: 150px;
+    }
+
+    /* Footer and General Styling*/
+    #elevate {
+        padding-bottom: 150px;
+    }
+
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+
+    #crypto-widget {
+        display: none;
+    }
+
+    #copyright {
+        float: none;
+        padding-right: 5%;
+    }
+
+    #social-media {
+        float: none;
+        padding-left: 0;
+    }
+
+    /* Footer */
+
+    #elevate {
+        padding-bottom: 150px;
+    }
+
+    .footer {
+        height: 120px;
+        width: 100vw;
+    }
+
+    #crypto-widget {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90vw;
+    }
+
+    #copyright {
+        float: none;
+        padding-right: 5%;
+        display: block;
+    }
+
+    #social-media {
+        float: none;
+        padding-left: 0;
+    }
+
 
 
 
