@@ -49,6 +49,37 @@ Please note that this project is not available for public deployment; it is inte
     - [Order](#order)
     - [Sequences](#sequences)
   - [Technologies Used <a name="technologies"></a> | #](#technologies-used---)
+    - [Coding](#coding)
+    - [Fonts, icons, graphics and formatting](#fonts-icons-graphics-and-formatting)
+    - [Artificial Intelligence (AI)](#artificial-intelligence-ai)
+  - [Actual Features Explained<a name="features"></a> | #](#actual-features-explained--)
+    - [Index.html](#indexhtml)
+      - [Welcome Page](#welcome-page)
+      - [Header](#header)
+      - [Login Section](#login-section)
+      - [Fiat Swap](#fiat-swap)
+      - [Crypto Swap](#crypto-swap)
+      - [Footer](#footer)
+    - [contact.html](#contacthtml)
+  - [Bugs & Testing<a name="bugs-testing"></a> | #](#bugs--testing--)
+      - [a) Website is too slow](#a-website-is-too-slow)
+      - [b) Metamask not working](#b-metamask-not-working)
+      - [c) Footer widget not seen](#c-footer-widget-not-seen)
+      - [d) The balances return to the original state after refreshing the page](#d-the-balances-return-to-the-original-state-after-refreshing-the-page)
+      - [e) Social media issue](#e-social-media-issue)
+      - [Other bugs](#other-bugs)
+  - [Testing](#testing)
+      - [Accessibility](#accessibility)
+      - [HTML & CSS validation](#html--css-validation)
+        - [index.html and contact.html](#indexhtml-and-contacthtml)
+      - [GT-metrix Performance](#gt-metrix-performance)
+      - [CSS validation](#css-validation)
+        - [index.htm](#indexhtm)
+        - [marketplace.html](#marketplacehtml)
+        - [learn.html](#learnhtml)
+        - [contact.html](#contacthtml-1)
+      - [Responsiveness](#responsiveness)
+      - [Security](#security)
 
 
 ## Badges
@@ -309,3 +340,215 @@ We focused on keeping things as simple as possible, presenting fewer choices to 
 After considering these factors, we were able to turn our ideas from the skeleton and surface into code with ease. The coding process was less complicated and more enjoyable. This approach required less time, energy, and other resources, resulting in less human work and fewer errors, and ultimately, a nobler product.
 
 ## Technologies Used <a name="technologies"></a> | [#](#index)
+
+Every project requires standardized processes and a variety of essential tools.
+
+From the beginning to the end, we used the following technologies:
+
+### Coding
+- **Visual Studio Code**: For the coding process, along with internal extensions such as auto-save, boilerplates, markdown and HTML preview, HTML autoindententation, JS autoindentation and more.
+- **Adobe XD**: For creating wireframes.
+- **[W3C HTML Validator](https://validator.w3.org/)**: For validating all .html pages.
+- **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)**: For validating all .css files.
+- **HTML5**: For structuring the site.
+- **CSS3**: For styling the site.
+- **JavaScript**: For adding full interactivity to the site.
+- **Google Developer Tools**: For testing and improving JS, CSS & HTML.
+- **GitHub**: For repositories and version control.
+- **Git Bash**: For version control and project management.
+- **[GT-Metrix](https://gtmetrix.com/)**: For checking/improving performance and fixing errors.
+- **[Screen Reader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn)**: for testing accesibility.
+- **[Code Institute](https://codeinstitute.net/)**: As a source of knowledge and information to build the entire project.
+- **Lighthouse devtool**: for accesibility and other issues.
+- **[freeconverter](https://www.freeconvert.com/)**: for converting most images to webp.
+
+### Fonts, icons, graphics and formatting
+
+- **[Fontawesome.com](https://fontawesome.com/)**: For the project's icons.
+- **Google Fonts**: For adding personality to the site.
+- **[My Color Space](https://mycolor.space/)**: For the project's color palette.
+- **[Flat UI Colors](https://flatuicolors.com/)**: For the primary color of the project.
+- **[Am I Responsive?](https://ui.dev/amiresponsive)**: For the initial mockup in various screen sizes.
+- **[Lunapic](https://www2.lunapic.com/editor/?action=changecolor)**: For changing specific colors in the logo.
+- **[Metamask Logo - codepen.io](https://codepen.io/shivammathur/pen/ZVJaEy)**: for Metamask Login Interactive Logo.
+- **Powerpoint**: for the table graphics on the Strategy Plane.
+
+- **Gitmind**: for the Mind map creation.
+
+- **[Ezgif](https://ezgif.com/video-to-gif)**: for converting MP4 to Gif.
+
+- **[Freeconvert](https://www.freeconvert.com/gif-compressor)**: for compressing GIF images.
+- **[Tinypng](https://tinypng.com/)**: for compressing .jpg and .png images.
+- **[Wechat](https://www.wechat.com/)**: for easy screenshots, editing and cropping, a chinese multifuncional desktop and mobile app.
+
+### Artificial Intelligence (AI)
+- **[ChatGPT-4](https://chat.openai.com/chat)**: For consulting, copywriting, proofreading, drudgery or assistance with various tedious tasks.
+  - GPT 4 was used to create the Metamask Login, no clear source of code was found. However, it is stable, origin: https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js
+
+## Actual Features Explained<a name="features"></a> | [#](#index)
+
+Most of the features were implemented as planned based on the user-centric design, but we were unable to develop two features properly due to time constraints: a proper `currency converter` and a proper `contact form`.
+
+The following features were essential for our MVP:
+
+### Index.html
+
+#### Welcome Page
+
+The welcome page is an essential feature that informs users of their location and purpose. It is also useful for marketing purposes.
+
+![Welcome Page](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/welcome.png)
+
+#### Header
+The branding logo is located on the left side of the screen, following the current convention. It also functions as a refreshing button when located on the index.html. On the right side, we have the navbar, which is easy to find, not overloaded, and practical:
+
+- Fiat > Crypto > Contact
+
+![header](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/header.png)
+
+#### Login Section
+
+The login section is crucial for validating users' identities and can be achieved using traditional technologies or Metamask (Web3).
+
+The login form is fully interactive, user-friendly, and enjoyable to use.
+
+![Login](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/login.png)
+
+#### Fiat Swap
+
+The fiat swap feature is designed to be simple and user-friendly, while also hiding the underlying technology from users. Currently, it is capable of handling some conversions using Javascript for demonstration purposes.
+
+The feature allows users to swap numbers and update balances. Most buttons within this section are interactive in some way or another, enhancing the user experience.
+
+Don't forget to give the switching button a try!
+
+![Fiat](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/fiat.png)
+
+#### Crypto Swap
+
+The crypto section functions similarly to the swap section, but it is connected to a Blockchain and will always try to call Metamask to fetch numbers and process transactions.
+
+While both the fiat and crypto sections are for demonstration purposes, they showcase important interactivity.
+
+Don't forget to give the switching button a try!
+
+![Crypto](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/crypto.png)
+
+#### Footer
+
+At the final part of the index.html, we have our footer. Users can also find it on the contact.html page. The footer features the primary color of the project and is also sticky, meaning it will stay visible even when the user scrolls down the page. It contains important information, like a crypto widget, links to social media accounts, and copyright information. 
+
+![footer](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/footer.png)
+
+### contact.html
+In this section, we planned a more sophisticated contact form that would have been even more interactive using Javascript. However, due to the lack of time, we were not able to implement it. Let's consider it part of the `Future Implementation`.
+
+The current contact form is still fully functional, interactive, and useful. It is also user-friendly and enjoyable to use.
+
+The header and footer sections are repeated throughout the website to maintain consistency and improve the overall user experience.
+
+![Contact](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/contact-page.png)
+
+## Bugs & Testing<a name="bugs-testing"></a> | [#](#index)
+
+#### a) Website is too slow
+
+We tried our best to keep everything in a single page, making a very powerful web application. It works efficiently on every device. However, we cannot guarantee that it will work the same on devices with low memory or processing capacities.
+
+#### b) Metamask not working
+
+Currently, Metamask is installed and partially working as expected, although there is a true feature installed. Once it is connected properly to the site, no issues should be found. For the rest, make sure you have allowed Metamask to login.
+
+#### c) Footer widget not seen
+
+The footer widget is a third-party widget, as seen in our credits section and technologies used. It may not load sometimes, but it does not mean it is not currently working; it could be due to network issues.
+
+#### d) The balances return to the original state after refreshing the page
+
+This is normal and expected since the accounts created are for showcasing the power of the project.
+
+#### e) Social media issue
+
+Currently, social media buttons only point to the main pages for demonstration purposes.
+
+#### Other bugs
+
+For other related bugs, we recommend always refreshing the page or deleting cache files. The problem is not with the Morada project; it could be related to third-party issues or related to your own device settings and capabilities.
+
+## Testing
+
+We have tested our site for accessibility, Javascript, HTML & CSS validation, performance on GT-metrix, and responsiveness.
+
+We also ran a check with `Google Chrome's integrated Lighthouse devtool` and found a few errors, which were fixed accordingly. These included improving the aria-label. Surprisingly, the accessibility of the site was great!
+
+During the development process, we were constantly doing testing to make sure we come up with a great final product. At the end of the development process and deployment, we have run the following tests:
+
+#### Accessibility
+
+We have used a [Screen Reader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn) created by Google. As a result, we have improved the aria-label of some features.
+
+- As tested with Lighthouse devtools:
+
+![Accessibility results](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/access.png)
+
+#### HTML & CSS validation
+
+We have used the official W3C Markup Validation Service to test our site. We found just 5 common errors on each page, and they were already solved. Therefore, the site shows the following results:
+
+##### index.html and contact.html
+
+![HTML validation](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/html.png)
+
+#### GT-metrix Performance
+
+After using GT-Metrix we realized that our site is doing quite well with a 71% in performance, we took their suggestions on improving cached file by adding our `.htaccess` with the necessary values and by adding `loading="lazy"` to certain elements such images and iframes and after that we got 91%. The image talk by itself:
+
+![GT-metrix Result](https://github.com/plexoio/morada/blob/main/documentation/assets/img/gtmetrix.webp)
+
+#### CSS validation
+
+This test represents all the .css files `style.css`, `nft.css`, and `media.css` queries. Since we were doing constant testing to our css the result was the following:
+
+##### index.htm
+
+![CSS testing for index page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style.webp)
+
+##### marketplace.html
+
+![CSS testing for marketplace page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style2.webp)
+
+##### learn.html
+
+![CSS testing for learn page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style3.webp)
+
+##### contact.html
+
+![CSS testing for contact page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style4.webp)
+
+- Note: it does not mean the css is perfect.
+
+#### Responsiveness
+
+We have run manual tests on different devices to make sure our media queries are working 100%. We have made final improvements to it, and now we believe it's suitable for most screen sizes out there in the world. Here is again the insight shot:
+
+![Responsive Mockup image](https://github.com/plexoio/morada/blob/main/documentation/assets/img/responsive-mockup.webp)
+
+#### Security
+
+Our site is static, and we have only used HTML and CSS, with just a little JavaScript to demonstrate how Metamask will work once fully set up.
+
+To improve security, we have added the `rel attribute` to compromising anchors such as social media links or third-party services, especially those with user-generated content.
+
+Here are the values we have used as an example in action:
+
+`rel="author noopener noreferrer nofollow"`
+
+- **Author:** This value is used to indicate that the current document belongs to the linked author or is related to them. It is often used in blog posts or articles, where the author's name and a link to their bio or website is included.
+
+- **Noopener:** This value prevents the new page from being able to access the `window.opener` property of the current page, not allowing a gap of access to both directions, the origin and destination, either could be malicious, which can help protect against malicious attacks.
+
+- **Noreferrer:** This value instructs the browser not to send the Referer header (which includes a bunch of private data) to the linked page, which can help protect user privacy.
+
+- **Nofollow:** This value tells search engines not to follow the link, which can help prevent spam and malicious links from affecting a website's search engine rankings. It tells the search engines or target system that the origin website mentions this link but does not endorse it, and it should not trust it or even mention it.
+
+`Noopener` and `noreferrer` values are often used together to provide enhanced security and privacy when opening links in a new tab or window.
