@@ -1,5 +1,11 @@
-const openCrypto = document.getElementById('crypto-swap'); // Global const extended to other .js
+// Global const extended to other .js
+const openCrypto = document.getElementById('crypto-swap');
 
+/** 
+ * When clicking the switching section then hide or show Crypto & Fiat swap
+ * and it displays as well some balances as well as for
+ * triggering the Metamask Login
+*/
 function innerSwitching(event) {
     if (openFiat.style.display === "inline-block") { // If fiat is ON
         openFiat.style.display = "none";
@@ -9,11 +15,11 @@ function innerSwitching(event) {
     } else if (openCrypto.style.display === "inline-block") {     // If crypto is ON
         openCrypto.style.display = "none";
         openFiat.style.display = "inline-block";
-        innerSwitcherCryto.addEventListener('click', (event) => { // Trigger Metamask login
+        innerSwitcherCryto.addEventListener('click', (event) => { // Trigger Vendor Metamask login
             event.preventDefault();
             connect()
         });
-        innerSwitcherCryto.addEventListener('touchend', (event) => { // Trigger Metamask login device
+        innerSwitcherCryto.addEventListener('touchend', (event) => { // Trigger Vendor Metamask login device
             event.preventDefault();
             connect()
         });
@@ -31,10 +37,10 @@ for (fiat = 0; fiat < toFiat.length; fiat++) {
 const innerSwitchCrypto = document.getElementsByClassName('switch-crypto');
 const innerSwitcherCryto = innerSwitchCrypto[0];
 innerSwitcherCryto.addEventListener('click', innerSwitching);
-innerSwitcherCryto.addEventListener('touchend', innerSwitching);
+innerSwitcherCryto.addEventListener('touchend', innerSwitching); // device
 
 // Event listener to title 'Switch to Fiat'
 const innerSwitchFiat = document.getElementsByClassName('switch-fiat');
 const innerSwitcherFiat = innerSwitchFiat[0];
 innerSwitcherFiat.addEventListener('click', innerSwitching);
-innerSwitcherFiat.addEventListener('touchend', innerSwitching);
+innerSwitcherFiat.addEventListener('touchend', innerSwitching); // device

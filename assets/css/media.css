@@ -563,25 +563,4 @@
     .my-contact-form {
         margin: 0% 20% 20% 20%;
     }
-
-    /*Desktop Screen Size*/
-
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-
-        /* General Styling*/
-
-
-    }
-
-    /*Large desktops and high-resolution screens:*/
-
-    @media only screen and (min-width: 1441px) {
-
-        /* General Styling*/
-
-        /*Contact page*/
-
-
-        /*Footer*/
-
-    }
+}

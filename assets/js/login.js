@@ -4,14 +4,14 @@ const navBackOnline = backToSleep[0];
 const closeLoggedIn = document.getElementsByClassName('on-item')
 const openFiat = document.getElementById('fiat-swap'); // Global const extended to other .js
 
-/**
- * For User deep Validation, hide Crypto Swap & show Fiat Swap features
- */
-
+// Global variables for converter
 let fiatBalanceUSD;
 let fiatBalanceEUR;
 let fiatBalanceETH;
 let fiatBalanceBTC;
+/**
+ * For User deep Validation, hide Crypto Swap & show Fiat Swap features
+ */
 function loginListener(event) { // Validation Function
     event.preventDefault();
     let userInput = document.getElementById('username-input').value.slice(0, 49); // limit user input

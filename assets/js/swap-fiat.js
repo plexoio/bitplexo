@@ -30,6 +30,8 @@ function currencyFiatPairsFiat(event) {
         selectFromFiat.value = currencyFiatPairs[selectedKeyCurrencyto];
     }
 }
+
+// Event listener for the same function
 selectFromFiat.addEventListener('change', currencyFiatPairsFiat);
 selectToFiat.addEventListener('change', currencyFiatPairsFiat);
 circleFiat.addEventListener('click', currencyFiatPairsFiat);
@@ -39,12 +41,12 @@ circleFiat.addEventListener('touchend', currencyFiatPairsFiat);
 
 // start of RATE CALCULATION
 
+// global variable for calculation
+let calcMyNumber;
+let selectedCurrency;
 /**
  * RateFiatCalc to run a calculation based on a specific currency selection
  */
-
-let calcMyNumber;
-let selectedCurrency;
 function rateFiatCalc(event) {
     selectedCurrency = selectFromFiat.value;
     calcMyNumber = Number(enterFiat.value);
@@ -56,11 +58,11 @@ function rateFiatCalc(event) {
     }
 }
 
+// global variable for calculation
+let finalEUR;
 /**
  * Targeted from RateFiatCalc for USD-EUR rate calculation
  */
-
-let finalEUR;
 function eurRateFiatCalc(amount) {
     let selectedToEUR = selectToFiat.value;
     if (selectedToEUR === 'EUR') {
@@ -76,17 +78,10 @@ enterFiat.addEventListener('input', rateFiatCalc);
 
 // end of RATE CALCULATION
 
-// start of BALANCE UPDATE
-
-function balanceUSD(value) {
-    //
-}
-
 /**
  * Listen to 'Swap' button, then after swap 
  * it will update USD & EUR balances repectively
  */
-
 function updateNumbersFiat(event) {
     event.preventDefault();
 
@@ -102,9 +97,7 @@ function updateNumbersFiat(event) {
     convertedEUR += totalConvertedAmountEUR;
     let newBalanceEUR = usersAccount[0].fiatEUR + convertedEUR; // Balance
 
-    //From EUR to USD
-
-    if (selectedCurrency === 'USD') {
+    if (selectedCurrency === 'USD') { // update balances
         if (newBalanceUSD >= 0 && newBalanceEUR >= 0) {
             balanceFiat.children[1].innerHTML = `<li><b>USD</b> = ${newBalanceUSD.toFixed(3)}$</li>
         <li><b>EUR</b> = ${newBalanceEUR.toFixed(3)}€</li>`;
