@@ -1,6 +1,6 @@
 
 .contact-section {
-    width: 98vw;
+    width: 100%;
     padding-top: 50px;
 }
 
@@ -9,7 +9,7 @@
     border: 1px solid #3498db;
     padding: 20px;
     border-radius: 15px;
-    margin:0% 38% 10% 38%;
+    margin: 0% 30% 10% 30%;
 }
 
 form> div > label {
@@ -24,7 +24,7 @@ input {
     display: block;
     margin-top: 10px;
     padding: 5px;
-    width: 80%;
+    width: 90%;
 }
 
 textarea {

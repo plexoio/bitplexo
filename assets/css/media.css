@@ -175,6 +175,12 @@
         padding-left: 0;
     }
 
+    /*Contact Page*/
+
+    .my-contact-form {
+        margin: 0% 10% 50% 10%;
+    }
+
 }
 
 /*Tablets (portrait orientation)*/
@@ -239,7 +245,7 @@
         display: block;
         margin-top: 10px;
         color: #3498db;
-        
+
     }
 
     #username {
@@ -359,6 +365,12 @@
     #social-media {
         float: none;
         padding-left: 0;
+    }
+
+    /*Contact Page*/
+
+    .my-contact-form {
+        margin: 5% 10% 50% 10%;
     }
 
 }
@@ -546,29 +558,30 @@
         padding-left: 0;
     }
 
+    /*Contact Page*/
+
+    .my-contact-form {
+        margin: 0% 20% 20% 20%;
+    }
+
+    /*Desktop Screen Size*/
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+        /* General Styling*/
 
 
+    }
 
-}
+    /*Large desktops and high-resolution screens:*/
 
-/*Desktop Screen Size*/
+    @media only screen and (min-width: 1441px) {
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        /* General Styling*/
 
-    /* General Styling*/
-
-
-}
-
-/*Large desktops and high-resolution screens:*/
-
-@media only screen and (min-width: 1441px) {
-
-    /* General Styling*/
-
-    /*Contact page*/
+        /*Contact page*/
 
 
-    /*Footer*/
+        /*Footer*/
 
-}
+    }
