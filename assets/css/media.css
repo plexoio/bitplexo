@@ -6,6 +6,7 @@
 
     .media-small {
         margin-top: 25vw;
+        background-color: white;
     }
 
     .welcome h2 {
@@ -189,7 +190,7 @@
 
     /* Welcome Page*/
     .welcome h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     #enter-page {
@@ -199,6 +200,7 @@
 
     .media-small {
         margin-top: 10vw;
+        background-color: white;
     }
 
     ul {
@@ -391,6 +393,7 @@
 
     .media-small {
         padding-top: 0vw;
+        background-color: white;
     }
 
     ul {
