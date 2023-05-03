@@ -26,7 +26,9 @@ Please note that this project is not available for public deployment; it is inte
 ![Responsive Mockup image](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/responsive.png)
 
 **Preview Link:** [Bitplexo](https://plexoio.github.io/bitplexo/)
+
 **Access**
+
 - `username: 'admin'`
   `password: 'admin123.'`
 
