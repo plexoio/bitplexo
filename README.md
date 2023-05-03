@@ -23,7 +23,7 @@ Ultimately, we suggest the cohabitation of traditional banking systems and decen
 Please note that this project is not available for public deployment; it is intended solely for learning and demonstration purposes, although it is ready for use.
 
 
-![Responsive Mockup image](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/responsive-mockup.webp)
+![Responsive Mockup image](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/responsive.png)
 
 **Preview Link:** [Bitplexo](#)
 
@@ -61,7 +61,7 @@ Please note that this project is not available for public deployment; it is inte
       - [Crypto Swap](#crypto-swap)
       - [Footer](#footer)
     - [contact.html](#contacthtml)
-  - [Bugs & Testing<a name="bugs-testing"></a> | #](#bugs--testing--)
+  - [Bugs & Testing](#bugs--testing)
       - [a) Website is too slow](#a-website-is-too-slow)
       - [b) Metamask not working](#b-metamask-not-working)
       - [c) Footer widget not seen](#c-footer-widget-not-seen)
@@ -70,14 +70,10 @@ Please note that this project is not available for public deployment; it is inte
       - [Other bugs](#other-bugs)
   - [Testing](#testing)
       - [Accessibility](#accessibility)
-      - [HTML & CSS validation](#html--css-validation)
+      - [HTML & CSS Validation](#html--css-validation)
         - [index.html and contact.html](#indexhtml-and-contacthtml)
       - [GT-metrix Performance](#gt-metrix-performance)
-      - [CSS validation](#css-validation)
-        - [index.htm](#indexhtm)
-        - [marketplace.html](#marketplacehtml)
-        - [learn.html](#learnhtml)
-        - [contact.html](#contacthtml-1)
+      - [CSS Validation](#css-validation)
       - [Responsiveness](#responsiveness)
       - [Security](#security)
 
@@ -449,11 +445,13 @@ The header and footer sections are repeated throughout the website to maintain c
 
 ![Contact](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/contact-page.png)
 
-## Bugs & Testing<a name="bugs-testing"></a> | [#](#index)
+## Bugs & Testing
+
+As with any project, there may be some bugs that we have encountered. Here are some of the issues we've come across:
 
 #### a) Website is too slow
 
-We tried our best to keep everything in a single page, making a very powerful web application. It works efficiently on every device. However, we cannot guarantee that it will work the same on devices with low memory or processing capacities.
+We tried our best to keep everything on a single page, making a powerful web application that works efficiently on every device. However, we cannot guarantee that it will work the same on devices with low memory or processing capacities.
 
 #### b) Metamask not working
 
@@ -479,21 +477,19 @@ For other related bugs, we recommend always refreshing the page or deleting cach
 
 We have tested our site for accessibility, Javascript, HTML & CSS validation, performance on GT-metrix, and responsiveness.
 
-We also ran a check with `Google Chrome's integrated Lighthouse devtool` and found a few errors, which were fixed accordingly. These included improving the aria-label. Surprisingly, the accessibility of the site was great!
+We also ran a check with Google Chrome's integrated Lighthouse devtool and found a few errors, which were fixed accordingly. These included improving the aria-label. Surprisingly, the accessibility of the site was great!
 
-During the development process, we were constantly doing testing to make sure we come up with a great final product. At the end of the development process and deployment, we have run the following tests:
+During the development process, we constantly tested to ensure that we delivered a great final product. After the development process and deployment, we conducted the following tests:
 
 #### Accessibility
 
-We have used a [Screen Reader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn) created by Google. As a result, we have improved the aria-label of some features.
-
-- As tested with Lighthouse devtools:
+We used a Screen Reader created by Google to test our site's accessibility. As a result, we improved the aria-label of some features. Our Lighthouse devtools test results for accessibility were as follows:
 
 ![Accessibility results](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/access.png)
 
-#### HTML & CSS validation
+#### HTML & CSS Validation
 
-We have used the official W3C Markup Validation Service to test our site. We found just 5 common errors on each page, and they were already solved. Therefore, the site shows the following results:
+We used the official W3C Markup Validation Service to test our site's HTML and CSS. We found just five common errors on each page, and they were already solved. Therefore, the site shows the following results:
 
 ##### index.html and contact.html
 
@@ -501,47 +497,35 @@ We have used the official W3C Markup Validation Service to test our site. We fou
 
 #### GT-metrix Performance
 
-After using GT-Metrix we realized that our site is doing quite well with a 71% in performance, we took their suggestions on improving cached file by adding our `.htaccess` with the necessary values and by adding `loading="lazy"` to certain elements such images and iframes and after that we got 91%. The image talk by itself:
+After using GT-Metrix we realized that our site is doing quite well with an 88% in performance. We took their suggestions on improving cached files by adding our `.htaccess` with the necessary values.
 
-![GT-metrix Result](https://github.com/plexoio/morada/blob/main/documentation/assets/img/gtmetrix.webp)
+![GT-metrix Result](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/gtmetrix.png)
 
-#### CSS validation
+#### CSS Validation
 
-This test represents all the .css files `style.css`, `nft.css`, and `media.css` queries. Since we were doing constant testing to our css the result was the following:
+This test represents all the .css files `style.css`, `contact.css`, `swap.css` and `media.css` queries. Since we were constantly testing our CSS, the result was as follows:
 
-##### index.htm
+![CSS Validation](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/css.png)
 
-![CSS testing for index page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style.webp)
-
-##### marketplace.html
-
-![CSS testing for marketplace page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style2.webp)
-
-##### learn.html
-
-![CSS testing for learn page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style3.webp)
-
-##### contact.html
-
-![CSS testing for contact page](https://github.com/plexoio/morada/blob/main/documentation/assets/img/w3c-style4.webp)
-
-- Note: it does not mean the css is perfect.
+- Note: it does not mean the CSS is perfect.
 
 #### Responsiveness
 
-We have run manual tests on different devices to make sure our media queries are working 100%. We have made final improvements to it, and now we believe it's suitable for most screen sizes out there in the world. Here is again the insight shot:
+We ran manual tests on different devices to ensure that our media queries were working 100%. We made final improvements to it, and now we believe it's suitable for most screen sizes. Here is the insight shot:
 
-![Responsive Mockup image](https://github.com/plexoio/morada/blob/main/documentation/assets/img/responsive-mockup.webp)
+![Responsive Mockup image](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/responsive.png)
+
 
 #### Security
 
-Our site is static, and we have only used HTML and CSS, with just a little JavaScript to demonstrate how Metamask will work once fully set up.
+Our site is semi-static, and we have used heavily Javascript, HTML, and CSS.
 
 To improve security, we have added the `rel attribute` to compromising anchors such as social media links or third-party services, especially those with user-generated content.
 
 Here are the values we have used as an example in action:
 
 `rel="author noopener noreferrer nofollow"`
+
 
 - **Author:** This value is used to indicate that the current document belongs to the linked author or is related to them. It is often used in blog posts or articles, where the author's name and a link to their bio or website is included.
 
