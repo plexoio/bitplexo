@@ -612,7 +612,7 @@ In this way, we were able to deploy our project successfully with no major issue
 
 ## Credits <a name="credits"></a> | [#](#index)
 
-- **Brian O'Hare**: for mentoring me three times on this project. Without him, it would not have been possible.
+- **Brian O'Hare**: for mentoring me two times on this project. Without him, it would not have been possible with this tight timeframe.
 - **[Metamask Login CDN](https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js)**: for sharing to the public Metamask Web3 Login.
 - **[Metamask Logo - codepen.io](https://codepen.io/shivammathur/pen/ZVJaEy)**: for provinding the Metamask Login Interactive Logo.
 - **[Crypto Widget](https://www.cryptohopper.com/)**: for providing Crypto Widget on footer.
