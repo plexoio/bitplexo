@@ -68,6 +68,8 @@ Please note that this project is not available for public deployment; it is inte
       - [Crypto Swap](#crypto-swap)
       - [Footer](#footer)
     - [contact.html](#contacthtml)
+      - [Welcome Page](#welcome-page-1)
+      - [Contact Section](#contact-section)
   - [Bugs & Testing](#bugs--testing)
       - [a) Website is too slow](#a-website-is-too-slow)
       - [b) Metamask not working](#b-metamask-not-working)
@@ -449,7 +451,16 @@ At the final part of the index.html, we have our footer. Users can also find it 
 ![footer](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/footer.png)
 
 ### contact.html
+
 In this section, we planned a more sophisticated contact form that would have been even more interactive using Javascript. However, due to the lack of time, we were not able to implement it. Let's consider it part of the `Future Implementation`.
+
+#### Welcome Page
+
+The welcome page here is is also an essential feature that informs users of their location and purpose. It is also useful for marketing purposes.
+
+![Welcome Contact Page](https://github.com/plexoio/bitplexo/blob/main/documentation/assets/img/contact.png)
+
+#### Contact Section
 
 The current contact form is still fully functional, interactive, and useful. It is also user-friendly and enjoyable to use.
 
